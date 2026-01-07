@@ -2,7 +2,7 @@
 <p>you don't know?</p>
 <p>copyright is a shield that protect intellectual materials.</p>
 <h2>👥 who is responsible for copyright?</h2>
-<p>in human population, i mention <b>you and everyone else above 18</b>, regardless of gender, culture.</p>
+<p>in human population, i mention <b>you and anyone else above 18</b>, regardless of gender, culture.</p>
 <h2>😭 why?</h2>
 <p>don't be jealous. calm down, and wipe your tears.</p>
 <h3>✨ i apply copyright, to...</h3>
