@@ -75,9 +75,9 @@
 <h3>🥶 if you violate the copyright conditions, i'll...</h3>
 <ul>
  <li>
-  sue you to the court.
+  🎉 sue you to the court.
  </li>
  <li>
-  ban you from using any of my materials, for forever.
+  💥 ban you from using any of my materials, for forever.
  </li>
 </ul>
