@@ -60,6 +60,9 @@
 </h3>
 <ul>
  <li>
+  contribute.
+ </li>
+ <li>
   transfer.
  </li>
  <li>
