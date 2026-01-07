@@ -10,7 +10,7 @@
   balance trust for material sources.
  </li>
  <li>
-  prevent someone else to steal my money income from my own materials.
+  prevent from money income leak to someone else.
  </li>
 </ul>
 <h2>🛡️ condition</h2>
