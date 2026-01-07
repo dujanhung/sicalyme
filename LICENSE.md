@@ -1,6 +1,6 @@
 <h2>🛡️do & don't</h2>
 <p>by using sicalyme materials, you are responsible to obey these conditions:</p>
-<h3>✅ i let you to...</h3>
+<h3>✅ i let you...</h3>
 <ul>
  <li>
   share alike
