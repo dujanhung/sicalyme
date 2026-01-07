@@ -1,5 +1,5 @@
 <h2>🤔 what is copyright?</h2>
-<p>your 🌝brain won't know how my 🌚brain works</p>
+<p>your 🌝copyright won't know what</p>
 <p>copyright is a shield that protect intellectual materials.</p>
 <h2>👥 who is responsible for copyright?</h2>
 <p><b>everyone</b> above 18, regardless of gender, culture.</p>
