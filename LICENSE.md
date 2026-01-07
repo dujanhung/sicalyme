@@ -2,6 +2,15 @@
 <p>copyright is a shield that protect intellectual materials.</p>
 <h2>👥 who is responsible for copyright?</h2>
 <p><b>everyone</b> above 18, regardless of gender, culture.</p>
+<h2>😭 why?</h2>
+<ul>
+ <li>
+  balance trust for material sources.
+ </li>
+ <li>
+  prevent someone else to steal my money income from my own materials.
+ </li>
+</ul>
 <h2>🛡️ condition</h2>
 <p>by using sicalyme materials, you are responsible to obey these conditions:</p>
 <h3>✅ i let you...</h3>
