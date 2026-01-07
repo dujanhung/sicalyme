@@ -18,10 +18,10 @@
 <h3>✅ i let you...</h3>
 <ul>
  <li>
-  share alike
+  share alike.
  </li>
  <li>
-  use in personal/learning context
+  use in personal/learning context.
  </li>
 </ul>
 <h3>🚫 i forbid you to...</h3>
@@ -30,10 +30,10 @@
   use in commercial context, such as:
   <ul>
    <li>
-    advertisement
+    advertisement.
    </li>
    <li>
-    physical/digital trade
+    physical/digital trade.
    </li>
   </ul>
  </li>
@@ -41,18 +41,18 @@
   modify, such as:
   <ul>
    <li>
-    crop/change color/mirror
+    crop/change color/mirror.
    </li>
    <li>
-    remix with other materials
+    remix with other materials.
    </li>
   </ul>
  </li>
  <li>
-  copy/replicate/steal copyright
+  copy/replicate/steal copyright.
  </li>
  <li>
-  pretend to be owner of the copyright
+  pretend to be owner of the copyright.
  </li>
 </ul>
 <h3>
@@ -60,10 +60,10 @@
 </h3>
 <ul>
  <li>
-  transfer
+  transfer.
  </li>
  <li>
-  purchased time use
+  purchase-time use.
  </li>
 </ul>
 <h2>
@@ -73,5 +73,8 @@
 <ul>
  <li>
   sue you to the court.
+ </li>
+ <li>
+  ban you from using any of my materials, for forever.
  </li>
 </ul>
