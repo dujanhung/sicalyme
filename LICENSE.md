@@ -3,6 +3,8 @@
 <h2>👥 who is responsible for copyright?</h2>
 <p><b>everyone</b> above 18, regardless of gender, culture.</p>
 <h2>😭 why?</h2>
+<p>calm down, and wipe your tears.</p>
+<h3>✨ i apply copyright, to...</h3>
 <ul>
  <li>
   balance trust for material sources.
