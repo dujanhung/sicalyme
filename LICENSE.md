@@ -1,6 +1,6 @@
 <h2>🤔 what is copyright?</h2>
 <h2>👥 who is responsible for copyright?</h2>
-<p><b>everyone</b>, regardless of age, gender, culture</p>
+<p><b>everyone</b> above 18, regardless of gender, culture</p>
 <h2>🛡️ condition</h2>
 <p>by using sicalyme materials, you are responsible to obey these conditions:</p>
 <h3>✅ i let you...</h3>
