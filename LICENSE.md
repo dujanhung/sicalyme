@@ -41,7 +41,7 @@
  </li>
 </ul>
 <h3>
-🥺 i bypass your limits for...
+🥺 i bypass you for...
 </h3>
 <ul>
  <li>
