@@ -40,3 +40,14 @@
   pretend to be owner of the copyright
  </li>
 </ul>
+<h3>
+🥺 i bypass your exceptions for...
+</h3>
+<ul>
+ <li>
+  transfer
+ </li>
+ <li>
+  purchased time use
+ </li>
+</ul>
