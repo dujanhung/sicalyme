@@ -10,7 +10,7 @@
   balance trust for material sources.
  </li>
  <li>
-  prevent from money income leak to someone else.
+  prevent from money income leakage.
  </li>
 </ul>
 <h2>🛡️ condition</h2>
@@ -64,5 +64,14 @@
  </li>
  <li>
   purchased time use
+ </li>
+</ul>
+<h2>
+ 💀 punishment
+</h2>
+<h3>if you violate the copyright conditions, i'll...</h3>
+<ul>
+ <li>
+  sue you to the court.
  </li>
 </ul>
