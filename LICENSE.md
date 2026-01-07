@@ -23,9 +23,6 @@
   </ul>
  </li>
  <li>
-  copy/replicate/steal copyright
- </li>
- <li>
   modify, such as:
   <ul>
    <li>
@@ -35,5 +32,11 @@
     remix with other materials
    </li>
   </ul>
+ </li>
+ <li>
+  copy/replicate/steal copyright
+ </li>
+ <li>
+  pretend to be owner of the copyright
  </li>
 </ul>
