@@ -14,7 +14,7 @@
  </li>
 </ul>
 <h2>🛡️ condition</h2>
-<p>by using sicalyme materials, you are responsible to obey these conditions:</p>
+<p>by using sicalyme materials, you are responsible for these conditions:</p>
 <h3>✅ i let you...</h3>
 <ul>
  <li>
