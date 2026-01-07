@@ -53,7 +53,7 @@
   copy/replicate/steal copyright.
  </li>
  <li>
-  pretend to be owner of the copyright.
+  pretend to be the owner of the copyright.
  </li>
 </ul>
 <h3>
@@ -73,6 +73,7 @@
 <h2>
  💀 punishment
 </h2>
+<p>uh oh... i'd feel sad for you.</p>
 <h3>🥶 if you violate the copyright conditions, i'll...</h3>
 <ul>
  <li>
