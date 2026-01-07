@@ -1,4 +1,5 @@
 <h2>🛡️do & don't</h2>
+<p>by using sicalyme materials, you are responsible to obey these conditions:</p>
 <h3>✅ i let you to...</h3>
 <ul>
  <li>
@@ -22,7 +23,7 @@
   </ul>
  </li>
  <li>
-  copy/replicate/steal
+  copy/replicate/steal copyright
  </li>
  <li>
   modify, such as:
