@@ -72,7 +72,7 @@
 <h2>
  💀 punishment
 </h2>
-<h3>if you violate the copyright conditions, i'll...</h3>
+<h3>🥶 if you violate the copyright conditions, i'll...</h3>
 <ul>
  <li>
   sue you to the court.
