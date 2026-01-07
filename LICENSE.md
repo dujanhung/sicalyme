@@ -1,4 +1,4 @@
-<p>copyright</p>
+<h2>🛡️do & don't</h2>
 <h3>✅ i let you to...</h3>
 <ul>
  <li>
