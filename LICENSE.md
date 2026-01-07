@@ -6,7 +6,17 @@
 <h3>🐥 age</h3>
 <p>above 18.</p>
 <h3>🚻 gender</h3>
-<p>male, female, and other genders.</p>
+<ul>
+ <li>
+  ♂️male.
+ </li>
+ <li>
+  ♀️female.
+ </li>
+ <li>
+  ⚧️other genders.
+ </li>
+</ul>
 <h3>🪕 culture</h3>
 <p>all culture.</p>
 <h2>😭 why?</h2>
