@@ -24,4 +24,15 @@
  <li>
   copy/replicate/steal
  </li>
+ <li>
+  modify, such as:
+  <ul>
+   <li>
+    crop/change color/mirror
+   </li>
+   <li>
+    remix with other materials
+   </li>
+  </ul>
+ </li>
 </ul>
