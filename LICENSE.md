@@ -41,7 +41,7 @@
  </li>
 </ul>
 <h3>
-🥺 i bypass your exceptions for...
+🥺 i bypass your limits for...
 </h3>
 <ul>
  <li>
