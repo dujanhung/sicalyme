@@ -11,7 +11,7 @@ viewers could go to every files, via clicking on external links.
 
 <a href="https://github.com/dujanhung/sicalyme/blob/main/README.md">README.md</a>
 
-<a href="https://github.com/dujanhung/sicalyme/tree/main">main branch</a>
+<a href="https://github.com/dujanhung/sicalyme/tree/main">view folders</a>
 
 <h2>child navigation</h2>
 
