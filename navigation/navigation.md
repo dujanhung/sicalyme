@@ -9,6 +9,8 @@ viewers could go to every files, via clicking on external links.
 
 <h2>parent navigation</h2>
 
+<a href="https://github.com/dujanhung/sicalyme/blob/main/README.md">home</a>
+
 <h2>child navigation</h2>
 
 <h3>documentation</h3>
