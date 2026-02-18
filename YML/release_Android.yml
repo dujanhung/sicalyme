@@ -1,4 +1,4 @@
-name: Download Sicalyme_v1.0.2_1650x720px.apk
+name:Download Sicalyme_v1.0.2_1650x720px.apk
 
 on:
  workflow_dispatch:
