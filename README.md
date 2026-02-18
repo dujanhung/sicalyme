@@ -4,7 +4,7 @@
 
 <ul>
  <li>
-  sicalyme wiki in Fandom is closed by Fandom staff. so, all the contents are disappeared.
+  sicalyme wiki in Fandom is <b>CLOSED by Fandom staff</b>. so, all the contents are disappeared.
  </li>
 </ul>
 
