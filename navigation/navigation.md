@@ -9,11 +9,13 @@ viewers could go to every files, via clicking on external links.
 
 <h2>parent navigation</h2>
 
-<a href="https://github.com/dujanhung/sicalyme/blob/main/README.md">README.md</a>
+<a href="https://github.com/dujanhung/sicalyme/blob/main/README.md">home</a>
 
 <a href="https://github.com/dujanhung/sicalyme/tree/main">view folders</a>
 
 <h2>child navigation</h2>
+
+<a href="https://github.com/dujanhung/sicalyme/blob/main/documentation.md">documentation</a>
 
 <h3>documentation</h3>
 
