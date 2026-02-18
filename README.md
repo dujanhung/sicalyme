@@ -10,6 +10,4 @@
 
 <h2>navigation</h2>
 
-for further reading, go to:
-
 <a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/navigation.md">navigation</a>
