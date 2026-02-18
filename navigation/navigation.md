@@ -10,3 +10,5 @@ users could explore around all the file contents, via clicking on external links
 <h2>sub-navigation</h2>
 
 <h3>documentation</h3>
+
+<h3>install</h3>
