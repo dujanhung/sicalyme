@@ -1,4 +1,4 @@
-name: Download File Example
+name: Download Sicalyme_v1.0.2_1650x720px.apk
 
 on:
   workflow_dispatch: # Allows manual triggering of the workflow
@@ -13,8 +13,7 @@ jobs:
 
     - name: Download a file using curl
       run: |
-        # Replace the URL below with the external link to your file
-        curl -L -o downloaded_file.zip https://example.com/path-to-your-file
+        curl -L -o downloaded_file.zip https://www.mediafire.com/file/ks6cpnh1ypjifp8/sicalyme_v1.0.2_1650x720px.apk/file
         echo "File downloaded successfully!"
 
     - name: Verify File Exists
