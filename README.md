@@ -2,7 +2,11 @@
 
 <h2>notification</h2>
 
-<b>sicalyme wiki in Fandom is closed by Fandom staff</b>.
+<ul>
+ <li>
+  sicalyme wiki in Fandom is closed by Fandom staff
+ </li>
+</ul>
 
 <h2>navigation</h2>
 
