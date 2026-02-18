@@ -1,7 +1,7 @@
 name: Download Sicalyme_v1.0.2_1650x720px.apk
 
 on:
-  workflow_dispatch: # Allows manual triggering of the workflow
+  workflow_dispatch:
 
 jobs:
   download_file:
