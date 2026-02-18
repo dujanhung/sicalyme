@@ -15,7 +15,7 @@ viewers could go to every files, via clicking on external links.
 
 <h2>child navigation</h2>
 
-<a href="https://github.com/dujanhung/sicalyme/blob/main/documentation.md">documentation</a>
+<a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/documentation_navigation.md">documentation</a>
 
 <h3>documentation</h3>
 
