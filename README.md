@@ -4,7 +4,7 @@
 
 <ul>
  <li>
-  sicalyme wiki in Fandom is closed by Fandom staff
+  sicalyme wiki in Fandom is closed by Fandom staff.
  </li>
 </ul>
 
