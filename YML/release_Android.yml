@@ -1,18 +1,18 @@
-name:Download Sicalyme_v1.0.2_1650x720px.apk
+name: Download Sicalyme_v1.0.2_1650x720px.apk
 
 on:
  workflow_dispatch:
 
 jobs:
  download_file:
-  runs-on:ubuntu-latest
+  runs-on: ubuntu-latest
   step:
-  -name:Checkout Code
-   uses:actions/checkout@v3
-  -name:Download a file using curl
-   run:|
+  -name: Checkout Code
+   uses: actions/checkout@v3
+  -name: Download a file using curl
+   run: |
     curl -L -o sicalyme_v1.0.2_apk.zip https://www.mediafire.com/file/ks6cpnh1ypjifp8/sicalyme_v1.0.2_1650x720px.apk/file
     echo "file downloaded successfully!"
-  -name:Verify File Exists
-   run:|
+  -name: Verify File Exists
+   run: |
     ls -l sicalyme_v1.0.2_apk.zip
