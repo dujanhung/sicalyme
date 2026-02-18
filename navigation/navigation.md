@@ -1,10 +1,12 @@
 
-<h1>navigation</h1>
+<h1>navigation root</h1>
 
-"navigation" is a pathway.
+<h2>about</h2>
+
+"navigation" is a pathway in GitHub.
 
 users could explore around all the file contents, via clicking on external links.
 
-<h2>documentation</h2>
+<h2>sub-navigation</h2>
 
-<h2>install</h2>
+<h3>documentation</h3>
