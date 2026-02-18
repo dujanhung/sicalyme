@@ -1,0 +1,21 @@
+name: Download File Example
+
+on:
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+jobs:
+  download_file:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Download a file using curl
+      run: |
+        # Replace the URL below with the external link to your file
+        curl -L -o downloaded_file.zip https://example.com/path-to-your-file
+        echo "File downloaded successfully!"
+
+    - name: Verify File Exists
+      run: ls -l downloaded_file.zip
