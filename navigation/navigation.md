@@ -5,7 +5,7 @@
 
 "navigation" is a pathway in GitHub.
 
-users could explore around all the file contents, via clicking on external links.
+viewers could explore around all the file contents, via clicking on external links.
 
 <h2>sub-navigation</h2>
 
