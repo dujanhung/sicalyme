@@ -1,5 +1,5 @@
-<h1>documentation</h1>
+<h2>documentation</h2>
 
-<h2>sicalyme itself</h2>
+<h3>sicalyme itself</h3>
 
-<h2>character</h2>
+<h3>character</h3>
