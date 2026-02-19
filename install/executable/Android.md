@@ -1,8 +1,8 @@
-<h2>install sicalyme on Android</h2>
+<h2>📥 install sicalyme on Android</h2>
 
 <table><tr><td>
 
-<h2>instruction</h2>
+<h2>🛠️ instruction</h2>
 
 <table><tr><td>
 
@@ -14,7 +14,7 @@ a
 
 <table><tr><td>
 
-<h2>download link</h2>
+<h2>🔗 download link</h2>
 
 <table><tr><td>
 
