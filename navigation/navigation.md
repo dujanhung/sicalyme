@@ -22,7 +22,9 @@ viewers could go to every files, via clicking on external links.
 
 <a href="https://github.com/dujanhung/sicalyme/tree/main">view folders</a>
 
-</td></tr><tr><td>
+</td></tr></table>
+
+<table><tr><td>
 
 <h2>child navigation</h2>
 
