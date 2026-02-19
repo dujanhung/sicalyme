@@ -2,7 +2,7 @@
 
 <table><tr><td>
 
-<h2>notification</h2>
+<h2>🔔 notification</h2>
 
 <ul>
  <li>
@@ -18,7 +18,7 @@
 
 <table><tr><td>
 
-<h2>navigation</h2>
+<h2>🛣️ navigation</h2>
 
 <a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/navigation.md">navigation</a>
 
