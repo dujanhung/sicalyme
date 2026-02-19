@@ -10,11 +10,23 @@ turn off Google Play Protect.
 
 </td></tr><tr><td>
 
-click on the download link.
+install MediaFire on Google Play.
 
-it should bring you to a file in MediaFire.
+</td></tr><tr><td>
+
+go back to GitHub, and click on the download link.
+
+it should send you to a file in MediaFire.
+
+</td></tr><tr><td>
+
+select "save to my file"
+
+note: this is required, because the download button may summon unwanted malicious pop-up ads.
 
 </td></tr></table>
+
+in MediaFire app, download the file to your device.
 
 </td></tr></table>
 
