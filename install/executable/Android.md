@@ -8,6 +8,12 @@
 
 turn off Google Play Protect.
 
+</td></tr><tr><td>
+
+click on the download link.
+
+it should bring you to a file in MediaFire.
+
 </td></tr></table>
 
 </td></tr></table>
