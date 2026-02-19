@@ -8,7 +8,7 @@
 
 sicalyme wiki in Fandom is <b>CLOSED by Fandom staff</b>, not me.
 
-so, all the contents are disappeared.
+so, all the contents are <i>disappeared</i>.
 
 it would take a while to re-create everything from nothingness.
 
