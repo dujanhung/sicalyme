@@ -1,1 +1,0 @@
-<a href="https://www.mediafire.com/file/ks6cpnh1ypjifp8/sicalyme_v1.0.2_1650x720px.apk/file">v1.0.2_1650x720px</a>
