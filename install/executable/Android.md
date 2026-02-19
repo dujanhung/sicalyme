@@ -26,7 +26,7 @@ note: this is required, because the download button may summon unwanted maliciou
 
 </td></tr><tr><td>
 
-in MediaFire app, download the file to your device.
+in MediaFire app, save the file to your device.
 
 </td></tr></table>
 
