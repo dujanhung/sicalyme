@@ -24,9 +24,11 @@ select "save to my file"
 
 note: this is required, because the download button may summon unwanted malicious pop-up ads.
 
-</td></tr></table>
+</td></tr><tr><td>
 
 in MediaFire app, download the file to your device.
+
+</td></tr></table>
 
 </td></tr></table>
 
