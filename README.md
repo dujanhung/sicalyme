@@ -6,13 +6,7 @@
 
 <table><tr><td>
 
-<h2>⚰️ RIP Fandom wiki</h2>
-
-😱 sicalyme wiki in Fandom is <b>CLOSED by Fandom staff</b>, not me.
-
-😭 so, all the contents are <i>disappeared</i>.
-
-😇 it would take a while to re-create everything from nothingness.
+<h2>Fandom wiki</h2>
 
 </td></tr></table>
 
