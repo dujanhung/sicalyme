@@ -6,7 +6,7 @@
 
 <table><tr><td>
 
-😱 sicalyme wiki in Fandom is <b>CLOSED by Fandom staff</b>, not me.
+🔒 sicalyme wiki in Fandom is <b>CLOSED by Fandom staff</b>, not me.
 
 😭 so, all the contents are <i>disappeared</i>.
 
