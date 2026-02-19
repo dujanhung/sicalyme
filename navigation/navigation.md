@@ -1,6 +1,6 @@
-<div style="border-color:yellow;border-width:5px">
+<section>
 <h1>navigation root</h1>
-</div>
+</section>
 
 <h2>about</h2>
 
