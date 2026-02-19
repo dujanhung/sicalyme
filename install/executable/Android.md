@@ -6,7 +6,9 @@
 
 <table><tr><td>
 
-turn off Google Play Protect.
+turn off Google Play Protect, and every other device-security apps.
+
+this is required, because they are wrong to block the download process.
 
 </td></tr><tr><td>
 
