@@ -6,7 +6,7 @@
 
 <table><tr><td>
 
-<h2>⚰️ goodbye, sicalyme Fandom wiki </h2>
+<h2>⚰️ goodbye, sicalyme wiki in Fandom</h2>
 
 😱 sicalyme wiki in Fandom is <b>CLOSED by Fandom staff</b>, not me.
 
