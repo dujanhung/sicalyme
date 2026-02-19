@@ -20,8 +20,6 @@ viewers could go to every files, via clicking on external links.
 
 <a href="https://github.com/dujanhung/sicalyme/blob/main/README.md">home</a>
 
-<a href="https://github.com/dujanhung/sicalyme/tree/main">view folders</a>
-
 </td></tr></table>
 
 <table><tr><td>
