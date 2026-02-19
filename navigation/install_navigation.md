@@ -4,7 +4,11 @@
 
 <h2>🤔 about</h2>
 
-a
+choose one navigation entry.
+
+executable apk , exe.
+
+or, original source code in Godot.
 
 </td></td></table>
 
