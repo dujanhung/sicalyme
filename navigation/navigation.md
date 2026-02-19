@@ -16,7 +16,7 @@ viewers could go to every files, via clicking on external links.
 
 <table><tr><td>
 
-<h2>🧓🏻 parent navigation</h2>
+<h2>🧓🏻 parent</h2>
 
 <a href="https://github.com/dujanhung/sicalyme/blob/main/README.md">home</a>
 
@@ -24,7 +24,7 @@ viewers could go to every files, via clicking on external links.
 
 <table><tr><td>
 
-<h2>👶🏻 child navigation</h2>
+<h2>👶🏻 child</h2>
 
 <a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/documentation_navigation.md">documentation</a>
 
