@@ -4,7 +4,9 @@
 
 <h2>🤔 about</h2>
 
-a
+"documentation" is a book.
+
+it contains everything.
 
 </td></td></table>
 
