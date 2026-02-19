@@ -8,7 +8,9 @@
 
 viewers could go to every files, via clicking on external links.
 
-</td></tr><tr><td>
+</td></tr></table>
+
+<table><tr><td>
 
 <h2>navigation</h2>
 
