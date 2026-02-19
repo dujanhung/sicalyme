@@ -6,7 +6,7 @@
 
 <table><tr><td>
 
-a
+turn off Google Play Protect.
 
 </td></tr></table>
 
