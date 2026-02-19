@@ -12,7 +12,9 @@
 
 😇 it would take a while to re-create everything from nothingness.
 
-</td></tr><tr><td>
+</td></tr></table>
+
+<table><tr><td>
 
 🛠️ sicalyme is currently in development.
 
