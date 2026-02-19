@@ -6,6 +6,8 @@
 
 <table><tr><td>
 
+<h2>⚰️ goodbye, Fandom wiki </h2>
+
 😱 sicalyme wiki in Fandom is <b>CLOSED by Fandom staff</b>, not me.
 
 😭 so, all the contents are <i>disappeared</i>.
@@ -15,6 +17,8 @@
 </td></tr></table>
 
 <table><tr><td>
+
+<h2>🔥 sicalyme is alive</h2>
 
 🛠️ sicalyme is currently in development.
 
