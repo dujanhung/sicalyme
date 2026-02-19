@@ -1,1 +1,1 @@
-<link src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/LeowLyme.svg">
+<img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/LeowLyme.svg">
