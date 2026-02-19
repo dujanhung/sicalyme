@@ -1,6 +1,4 @@
-<section>
 <h1>navigation root</h1>
-</section>
 
 <h2>about</h2>
 
