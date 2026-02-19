@@ -42,6 +42,8 @@ in ZAchiver app, go to Downloads folder, and install the file.
 
 </td></tr></table>
 
+<table><tr><td>
+
 <h2>🛣️ navigation</h2>
 
 <table><tr><td>
