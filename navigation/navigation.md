@@ -1,4 +1,4 @@
-<div>
+<div style="border-color:yellow;border-width:5px">
 <h1>navigation root</h1>
 </div>
 
