@@ -4,15 +4,15 @@
 
 <h2>🔔 notification</h2>
 
-<ul>
- <li>
-  sicalyme wiki in Fandom is <b>CLOSED by Fandom staff</b>.
+<table><tr><td>
 
-  so, all the contents are disappeared.
+sicalyme wiki in Fandom is <b>CLOSED by Fandom staff</b>.
 
-  it would take a while to re-create everything from nothingness.
- </li>
-</ul>
+so, all the contents are disappeared.
+
+it would take a while to re-create everything from nothingness.
+
+</td></tr></table>
 
 </td></tr></table>
 
