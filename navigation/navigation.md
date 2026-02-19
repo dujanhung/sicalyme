@@ -2,7 +2,7 @@
 
 <table><tr><td>
 
-<h2 alignment="center">about</h2>
+<h2>about</h2>
 
 "navigation" is a pathway in GitHub.
 
