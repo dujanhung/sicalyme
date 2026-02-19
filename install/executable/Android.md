@@ -41,3 +41,15 @@ in ZAchiver app, go to Downloads folder, and install the file.
 </td></tr></table>
 
 </td></tr></table>
+
+<h2>🛣️ navigation</h2>
+
+<table><tr><td>
+
+<h2>🧓🏻 parent</h2>
+
+<a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/install_navigation.md">install</a>
+
+</td></tr></table>
+
+</td></tr></table>
