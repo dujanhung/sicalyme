@@ -10,13 +10,21 @@ turn off Google Play Protect.
 
 </td></tr><tr><td>
 
+install ZAchiver on Google Play.
+
+</td></tr><tr><td>
+
 go back to GitHub, and click on the download link.
 
 it should send you to a file in MediaFire.
 
 </td></tr><tr><td>
 
-select "download"
+select "download", and ignore the warning dialog.
+
+</td></tr><tr><td>
+
+in ZAchiver app, go to Downloads folder, and install the file.
 
 </td></tr></table>
 
