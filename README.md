@@ -18,7 +18,9 @@
 
 🛠️ sicalyme is currently in development.
 
-😇 so, it's not ready, yet.
+🔥 it would be very hard, and difficult.
+
+😇 but now, it's not ready, yet.
 
 </td></tr></table>
 
