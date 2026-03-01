@@ -4,13 +4,13 @@
 
 <h2>🛠️ instruction</h2>
 
-<table><tr><td>0</td><td>
+<table><tr><td>
 
 turn off Google Play Protect, and every other device-security apps.
 
 this is required, because they are wrong to block the apk installation process.
 
-</td></tr><tr><td>0.5</td><td>
+</td></tr><tr><td>
 
 install ZAchiver on Google Play.
 
