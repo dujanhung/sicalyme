@@ -20,7 +20,11 @@ or, original source code in Godot.
 
 <h2>🐘 parent</h2>
 
+<table><tr><td>
+
 <b><a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/navigation.md">navigation</a></b>
+
+</td></tr></table>
 
 </td></tr></table>
 
