@@ -32,7 +32,7 @@ it contains everything.
 
 <table><tr><td>
 
-<a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/documentation/metadata_navigation.md">metadata navigation</a>
+<b><a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/documentation/metadata_navigation.md">metadata</a></b>
 
 </td></tr></table>
 
