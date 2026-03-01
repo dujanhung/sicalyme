@@ -30,7 +30,7 @@ jobs:
         run: |
           g++ tools/svg_transformer.cpp -o svg_transformer
 
-      - name: run script on SVG files
+      - name: run script
         run: |
           find . -name "*.svg" -print0 | while IFS= read -r -d '' file; do
             ./svg_transformer "$file"
