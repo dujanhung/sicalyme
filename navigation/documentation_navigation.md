@@ -18,6 +18,8 @@ it contains everything.
 
 <h2>🐘 parent</h2>
 
+<table><tr><td>
+
 <b><a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/navigation.md">navigation</a></b>
 
 </td></tr></table>
@@ -26,7 +28,11 @@ it contains everything.
 
 <h2>🦟 child</h2>
 
+<table><tr><td>
+
 <a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/documentation/metadata_navigation.md">metadata navigation</a>
+
+</td></tr></table>
 
 </td></tr></table>
 
