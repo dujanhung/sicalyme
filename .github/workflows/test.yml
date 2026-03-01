@@ -1,12 +1,12 @@
 name: test
 
 on:
-  push:
-    paths:
-      - '**.svg'
-  pull_request:
-    paths:
-      - '**.svg'
+ push:
+  paths:
+   - '**.svg'
+ pull_request:
+  paths:
+   - '**.svg'
 
 jobs:
   normalize:
