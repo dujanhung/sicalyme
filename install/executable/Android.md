@@ -4,7 +4,7 @@
 
 <h2>🛠️ instruction</h2>
 
-<table><tr><td>
+<table><tr><td>0</td><td>
 
 turn off Google Play Protect, and every other device-security apps.
 
