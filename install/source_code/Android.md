@@ -30,7 +30,7 @@ in ZAchiver app, go to Downloads folder, and extract the zip file.
 
 </td></tr><tr><td>
 
-use Godot Engine to import `project.godot` file.
+use Godot Engine to import the `project.godot` file.
 
 </td></tr></table>
 
