@@ -1,5 +1,8 @@
 <h1>📖 documentation navigation root</h1>
 
+<svg>
+</svg>
+
 <table><tr><td>
 
 <h2>🤔 about</h2>
