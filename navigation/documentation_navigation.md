@@ -1,6 +1,6 @@
 <h1>📖 documentation navigation root</h1>
 
-<svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:psvg="http://www.paintersvg.com/namespace.html" id="documentation_icon" width="720" height="720" viewBox="0 0 720 720">
 </svg>
 
 <table><tr><td>
