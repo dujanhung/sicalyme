@@ -1,1 +1,0 @@
-npx svgo --multipass --config="{plugins:[{name:'convertPathData',params:{applyTransforms:true}}]}" '*.svg'
