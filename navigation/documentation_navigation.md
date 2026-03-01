@@ -26,7 +26,7 @@ it contains everything.
 
 <h2>🦟 child</h2>
 
-<a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/documentation_sicalyme_navigation.md">sicalyme metadata navigation</a>
+<a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/documentation/metadata_navigation.md">metadata navigation</a>
 
 </td></tr></table>
 
