@@ -50,9 +50,9 @@ in ZAchiver app, go to Downloads folder, and install the file.
 
 <table><tr><td>
 
-<h2>🧓🏻 parent</h2>
+<h2>🐘 parent</h2>
 
-<a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/install_navigation.md">install</a>
+<a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/install_navigation.md">sicalyme-install navigation root</a>
 
 </td></tr></table>
 
