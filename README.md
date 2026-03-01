@@ -28,6 +28,6 @@
 
 <h2>🛣️ navigation</h2>
 
-<a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/navigation.md">navigation</a>
+<b><a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/navigation.md">navigation</a>
 
-</td></tr></table>
+</td></tr></table></b>
