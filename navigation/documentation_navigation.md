@@ -24,6 +24,8 @@ it contains everything.
 
 </td></tr></table>
 
+</td></tr></table>
+
 <table><tr><td>
 
 <h2>🦟 child</h2>
