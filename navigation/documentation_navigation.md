@@ -16,15 +16,15 @@ it contains everything.
 
 <table><tr><td>
 
-<h2>🧓🏻 parent</h2>
+<h2>🐘 parent</h2>
 
-<a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/navigation.md">navigation</a>
+<b><a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/navigation.md">navigation</a></b>
 
 </td></tr></table>
 
 <table><tr><td>
 
-<h2>👶🏻 child</h2>
+<h2>🦟 child</h2>
 
 a
 
