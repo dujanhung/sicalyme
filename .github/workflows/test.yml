@@ -20,12 +20,12 @@ jobs:
 
       - name: compile script
         run: |
-          g++ tools/test.cpp -o test
+          g++ tools/test.cpp -o test_script_nm
 
       - name: run script
         run: |
           find . -name "*.svg" -print0 | while IFS= read -r -d '' file; do
-            ./test "$file"
+            ./test_script_nm "$file"
           done
 
       - name: commit changes if needed
