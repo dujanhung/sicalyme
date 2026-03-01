@@ -38,7 +38,7 @@ in ZAchiver app, go to Downloads folder, and install the file.
 
 <table><tr><td>
 
-<a href="https://www.mediafire.com/file/ks6cpnh1ypjifp8/sicalyme_v1.0.2_1650x720px.apk/file">v1.0.2_1650x720px</a>
+<b><a href="https://www.mediafire.com/file/ks6cpnh1ypjifp8/sicalyme_v1.0.2_1650x720px.apk/file">v1.0.2_1650x720px</a></b>
 
 </td></tr></table>
 
