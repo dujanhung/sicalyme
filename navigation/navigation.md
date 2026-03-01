@@ -18,7 +18,7 @@ viewers could go to every files, via clicking on external links.
 
 <h2>🐘 parent</h2>
 
-<a href="https://github.com/dujanhung/sicalyme/blob/main/README.md">home</a>
+<b><a href="https://github.com/dujanhung/sicalyme/blob/main/README.md">home</a></b>
 
 </td></tr></table>
 
@@ -26,9 +26,9 @@ viewers could go to every files, via clicking on external links.
 
 <h2>🦟 child</h2>
 
-<a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/documentation_navigation.md">documentation</a>
+<b><a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/documentation_navigation.md">documentation</a></b>
 
-<a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/install_navigation.md">install</a>
+<b><a href="https://github.com/dujanhung/sicalyme/blob/main/navigation/install_navigation.md">install</a></b>
 
 </td></tr></table>
 
