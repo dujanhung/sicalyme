@@ -18,6 +18,7 @@ jobs:
       - name: Flatten SVGs
         run: |
           find . -name "*.svg" -print0 | while IFS= read -r -d '' file; do
+            git add "$file"
             inkscape "$file" \
               --export-plain-svg="$file" \
               --actions="select-all;object-to-path;vacuum-defs"
