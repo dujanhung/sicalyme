@@ -1,13 +1,5 @@
 <h1>📖 documentation navigation root</h1>
 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:psvg="http://www.paintersvg.com/namespace.html" id="documentation_icon" width="720" height="720" viewBox="0 0 720 720">
-<g psvg:layer="body" style="opacity:0.98">
-<g id="group73">
-<path d=" M 566.91,474.85 566.91,463.27 582.61,479.67" style="fill:#323232;fill-opacity:1;stroke:none;"/>
-</g>
-</g>
-</svg>
-
 <table><tr><td>
 
 <h2>🤔 about</h2>
