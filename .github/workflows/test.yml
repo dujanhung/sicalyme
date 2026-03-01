@@ -25,5 +25,7 @@ jobs:
 
       - name: Commit if changed
         run: |
+         git --global user.name "dujanhung"
+         git --global user.email "chanhung2008.duong@gmail.com"
          git commit -m "Spec-perfect SVG flatten"
          git push
