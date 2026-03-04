@@ -18,7 +18,6 @@ jobs:
       - name: Flatten SVGs
         run: |
           find . -name "*.svg" -print0 | while IFS= read -r -d '' file; do
-            git add "$file"
             inkscape "$file" \
               --export-plain-svg="$file" \
               --actions="select-all;object-to-path;vacuum-defs"
@@ -26,7 +25,10 @@ jobs:
 
       - name: Commit if changed
         run: |
-         git config --global user.name "dujanhung"
-         git config --global user.email "chanhung2008.duong@gmail.com"
-         git commit -m "Spec-perfect SVG flatten"
-         git push
+          if [[ -n $(git status --porcelain) ]]; then
+            git config user.name "dujanhung"
+            git config user.email "chanhung2008.duong@gmail.com"
+            git add .
+            git commit -m "Spec-perfect SVG flatten"
+            git push
+          fi
