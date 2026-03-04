@@ -23,7 +23,6 @@ jobs:
             inkscape "$file" \
               --export-plain-svg="$file" \
               --actions="select-all;object-to-path;vacuum-defs"
-            -echo "$file"
           done
 
       - name: Commit if changed
