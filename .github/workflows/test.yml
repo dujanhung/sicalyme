@@ -11,6 +11,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
       - name: Install Inkscape
         run: sudo apt-get update && sudo apt-get install -y inkscape
