@@ -28,7 +28,7 @@ jobs:
       - name: Commit if changed
         run: |
           if [[ -n $(git status --porcelain) ]]; then
-            git config user.name "dujanhung"
+            git config user.name "github_actions"
             git config user.email "chanhung2008.duong@gmail.com"
             git add .
             git commit -m "Spec-perfect SVG flatten"
