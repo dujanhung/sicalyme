@@ -2,16 +2,16 @@
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:psvg="http://www.paintersvg.com/namespace.html" id="documentation_icon" width="720" height="720" viewBox="-1 -1 2 2">
 
-<path d="M 0,0 1,1 -1,1" style="fill:#ff0000;fill-opacity:1;stroke:none">
+<path d="M 0,0 1,5 -1,5" style="fill:#ff0000;fill-opacity:1;stroke:none">
 <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0" to="360" dur="1s" repeatCount="indefinite"/>
 </path>
-<path d="M 0,0 0.5,1 -0.5,1" style="fill:#ffff00;fill-opacity:1;stroke:none">
+<path d="M 0,0 1,5 -1,5" style="fill:#ffff00;fill-opacity:1;stroke:none">
 <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0" to="360" dur="2s" repeatCount="indefinite"/>
 </path>
-<path d="M 0,0 0.25,1 -0.25,1" style="fill:#00ff00;fill-opacity:1;stroke:none">
+<path d="M 0,0 1,5 -1,5" style="fill:#00ff00;fill-opacity:1;stroke:none">
 <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0" to="360" dur="3s" repeatCount="indefinite"/>
 </path>
-<path d="M 0,0 0.125,1 -0.125,1" style="fill:#00ffff;fill-opacity:1;stroke:none">
+<path d="M 0,0 1,5 -1,5" style="fill:#00ffff;fill-opacity:1;stroke:none">
 <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0" to="360" dur="4s" repeatCount="indefinite"/>
 </path>
 
