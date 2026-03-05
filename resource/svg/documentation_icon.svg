@@ -1,6 +1,6 @@
 <svg width="720" height="720" viewBox="0 0 720 720">
 
-<path d="M 0.0,0.0 720.0,720.0 0.0,720.0" style="fill:#000000;fill-opacity:1;stroke:none"/>
+<path d="M 0.0,0.0 720.0,720.0 0.0,720.0" style="fill:#000000;fill-opacity:1;stroke:none">
 <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0" to="360" dur="1s" repeatCount="indefinite"/>
 </path>
 
