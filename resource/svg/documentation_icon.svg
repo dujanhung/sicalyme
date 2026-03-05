@@ -2,7 +2,7 @@
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:psvg="http://www.paintersvg.com/namespace.html" id="documentation_icon" width="720" height="720" viewBox="-1 -1 2 2">
 
-<path d="M 0,0 1,1 0,1" style="fill:#000000;fill-opacity:1;stroke:none">
+<path d="M 0,0 0.5,0.5 0,-0.5" style="fill:#000000;fill-opacity:1;stroke:none">
 <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0" to="360" dur="1s" repeatCount="indefinite"/>
 </path>
 
