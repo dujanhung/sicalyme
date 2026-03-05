@@ -1,6 +1,7 @@
 <h1>📖 documentation navigation root</h1>
 
 <img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/documentation_icon.svg">
+<img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/documentation_icon.svg">
 
 <table><tr><td>
 
