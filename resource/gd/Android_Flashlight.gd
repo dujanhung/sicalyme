@@ -15,7 +15,9 @@ extends RefCounted
 
 static var _context:JavaClass:
  get():
-  return JavaClassWrapper.wrap("android.content.Context")
+  return JavaClassWrapper.wrap(
+   "android.content.Context"
+  )
 
 static var _context_inst:JavaObject:
  get():
@@ -23,7 +25,9 @@ static var _context_inst:JavaObject:
 
 static var _camera_manager_inst:JavaObject:
  get():
-  return _context_inst.getSystemService(_context.CAMERA_SERVICE)
+  return _context_inst.getSystemService(
+   _context.CAMERA_SERVICE
+  )
 
 ##act.
 static var act:bool:
@@ -31,6 +35,9 @@ static var act:bool:
   return act
  set(v):
   act=v
-  _camera_manager_inst.setTorchMode("0",v)
+  _camera_manager_inst.setTorchMode(
+   "0"
+   ,v
+  )
 
 #EOF
