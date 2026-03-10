@@ -13,6 +13,8 @@
 class_name Android_Flashlight
 extends RefCounted
 
+##==========
+
 static var _context:JavaClass:
  get():
   return JavaClassWrapper.wrap(
@@ -28,6 +30,8 @@ static var _camera_manager_inst:JavaObject:
   return _context_inst.getSystemService(
    _context.CAMERA_SERVICE
   )
+
+##==========
 
 ##act.
 static var act:bool:
