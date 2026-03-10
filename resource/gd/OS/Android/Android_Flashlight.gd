@@ -1,10 +1,10 @@
-#𒐪𒐪
+#
 
 @tool
 
 @abstract
 
-#𒐪𒐪
+#
 
 ##Android flashlight.
 ##[br]
@@ -14,12 +14,12 @@
 ##[br][color=ffffaa][b]warning[/b][/color] :
 ##[br] [color=ff5500]➣[/color] don't point the light beam at your eye.
 
-#𒐪𒐪
+#
 
 class_name Android_Flashlight
 extends RefCounted
 
-#𒐪𒐪
+#
 
 static var _context:JavaClass:
  get():
@@ -37,7 +37,7 @@ static var _camera_manager_inst:JavaObject:
    _context.CAMERA_SERVICE
   )
 
-#𒐪𒐪
+#
 
 ##act.
 static var act:bool:
@@ -50,6 +50,6 @@ static var act:bool:
    ,v
   )
 
-#𒐪𒐪
+#
 
 #EOF
