@@ -1,10 +1,10 @@
-#
+# annotation
 
 @tool
 
 @abstract
 
-#
+# documentation
 
 ##Android flashlight.
 ##[br]
@@ -14,7 +14,7 @@
 ##[br][color=ffffaa][b]warning[/b][/color] :
 ##[br] [color=ff5500]➣[/color] don't point the light beam at your eye.
 
-#
+# class tree
 
 class_name Android_Flashlight
 extends RefCounted
