@@ -32,3 +32,5 @@ static var act:bool:
  set(v):
   act=v
   _camera_manager_inst.setTorchMode("0",v)
+
+#EOF
