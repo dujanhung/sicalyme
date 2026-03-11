@@ -64,4 +64,4 @@ static var act:bool:
 # the end.
 #
 
-#EOF
+# EOF
