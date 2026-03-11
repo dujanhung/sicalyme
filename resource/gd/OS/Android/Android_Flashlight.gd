@@ -1,10 +1,14 @@
-# annotation
+#
+# annotation.
+#
 
 @tool
 
 @abstract
 
-# documentation
+#
+# documentation.
+#
 
 ##Android flashlight.
 ##[br]
@@ -14,12 +18,14 @@
 ##[br][color=ffffaa][b]warning[/b][/color] :
 ##[br] [color=ff5500]➣[/color] don't point the light beam at your eye.
 
-# class tree
+#
+# class tree.
+#
 
 class_name Android_Flashlight
 extends RefCounted
 
-#
+#private static variables.
 
 static var _context:JavaClass:
  get():
@@ -38,6 +44,8 @@ static var _camera_manager_inst:JavaObject:
   )
 
 #
+#public static variables.
+#
 
 ##act.
 static var act:bool:
@@ -50,6 +58,8 @@ static var act:bool:
    ,v
   )
 
+#
+#the end.
 #
 
 #EOF
