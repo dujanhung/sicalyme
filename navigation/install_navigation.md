@@ -1,4 +1,4 @@
-<h1>📥 sicalyme-install navigation root</h1>
+<h1>📥 install sicalyme</h1>
 
 <table><tr><td>
 
