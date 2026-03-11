@@ -44,7 +44,7 @@ static var _camera_manager_inst:JavaObject:
   )
 
 #
-#public static variables.
+# public static variables.
 #
 
 ##act.
@@ -59,7 +59,7 @@ static var act:bool:
   )
 
 #
-#the end.
+# the end.
 #
 
 #EOF
