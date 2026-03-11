@@ -1,4 +1,4 @@
-<h1>🪾 navigation root</h1>
+<h1>🪾 navigation</h1>
 
 <table><tr><td>
 
