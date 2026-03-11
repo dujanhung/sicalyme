@@ -6,7 +6,7 @@
 
 "navigation" is a pathway in GitHub.
 
-viewers could go to every files, via clicking on external links.
+viewers could go to every files, via clicking on links.
 
 </td></tr></table>
 
