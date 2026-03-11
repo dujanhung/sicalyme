@@ -25,7 +25,9 @@
 class_name Android_Flashlight
 extends RefCounted
 
-#private static variables.
+#
+# private static variables.
+#
 
 static var _context:JavaClass:
  get():
