@@ -1,4 +1,4 @@
-<h1>📖 documentation navigation root</h1>
+<h1>📖 documentation</h1>
 
 <img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/documentation_icon.svg">
 
