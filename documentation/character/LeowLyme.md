@@ -64,7 +64,21 @@ gender
 <b>
 diet
 </b>
-: 🍎fruit, 🥦veggie, 🍗meat, 🍚flour, ⚡electricity.
+:
+<table><tr><td>
+🍎fruit
+</td></tr></table>
+<table><tr><td>
+🥦veggie
+</td></tr></table>
+<table><tr><td>
+🍗meat
+</td></tr></table>
+<table><tr><td>
+🍚flour
+</td></tr></table>
+<table><tr><td>
+⚡electricity.
 </td></tr></table>
 <table><tr><td>
 😋
