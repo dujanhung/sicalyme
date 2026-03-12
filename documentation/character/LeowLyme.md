@@ -26,8 +26,12 @@ eow without M .
 </td></tr></table>
 
 <table><tr><td>
-==🤔 about==
+<h2>
+🤔 about
+</h2>
+<table><tr><td>
 * a
+</td></tr></table>
 </td></tr></table>
 
 ==🔍 general information==
