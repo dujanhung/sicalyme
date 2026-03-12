@@ -13,7 +13,7 @@ made with svg file.
 </sub>
 </td></tr></table>
 
-<cut>
+<bar>
 
 <table><tr><td>
 
