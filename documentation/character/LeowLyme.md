@@ -12,10 +12,10 @@ LeowLyme image.
 made with svg file.
 </sub>
 </td></tr></table>
-<div>
-<table><tr><td>
 
-<div>
+<split>
+
+<table><tr><td>
 
 <h2>
 🔑 quote
