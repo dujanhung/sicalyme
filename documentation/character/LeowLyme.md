@@ -42,7 +42,7 @@ eow without M .
 - 🏷️<b>full name</b>: Leo LeowLyme.
 </td></tr></table>
 <table><tr><td>
-- 🔑<b>key</b>: Leow.
+- 🔑<b>name shortcut</b>: Leow.
 </td></tr></table>
 <table><tr><td>
 - 🚻<b>gender</b>: ♂️ male.
