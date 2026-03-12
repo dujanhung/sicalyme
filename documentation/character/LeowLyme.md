@@ -3,7 +3,7 @@
 <table><tr><td>
 <img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/LeowLyme.svg">
 </td></tr></table>
-LeowLyme visualization.
+LeowLyme image.
 </td></tr></table>
 
 ==🔑 quote==
