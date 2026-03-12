@@ -102,7 +102,7 @@ favorite toy
 </td></tr></table>
 
 ==👀 appearance==
-* he is a tank, small, light weight.
+* he is a tank, small.
 * he has a head which is attached on a bearing.
 * he has 2 parallel tracks on each side, each track has 4 wheels.
 * he has a cannon in front of his face. 
