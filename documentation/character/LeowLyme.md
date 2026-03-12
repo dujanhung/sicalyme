@@ -9,9 +9,9 @@ LeowLyme
 </td></tr></table>
 LeowLyme image.
 <br>
-<sup>
+<sub>
 made with svg file.
-</sup>
+</sub>
 </td></tr></table>
 
 ==🔑 quote==
