@@ -80,6 +80,7 @@ diet
 <table><tr><td>
 ⚡electricity.
 </td></tr></table>
+</td></tr></table>
 <table><tr><td>
 😋
 <b>
