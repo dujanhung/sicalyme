@@ -7,7 +7,7 @@ LeowLyme
 <table><tr><td>
 <img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/LeowLyme.svg">
 </td></tr></table>
-LeowLyme image, svg file.
+LeowLyme image, with svg file.
 </td></tr></table>
 
 ==🔑 quote==
