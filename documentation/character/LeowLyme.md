@@ -3,9 +3,9 @@
 [[File:LeowLyme-v1.0.3.png|frameless|720x720px]]
 
 ==🔑 quote==
-{{Quote|
-quote=eow without M .
-}}
+<quote>
+eow without M .
+</quote>
 
 ==🤔 about==
 * a
