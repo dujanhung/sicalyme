@@ -6,7 +6,7 @@ LeowLyme
 <table><tr><td>
 <img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/LeowLyme.svg">
 </td></tr></table>
-LeowLyme image.
+LeowLyme perceptive view.
 <br>
 <sub>
 made with svg file.
