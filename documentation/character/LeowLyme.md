@@ -29,7 +29,7 @@ eow without M .
 🤔 about
 </h2>
 <table><tr><td>
-* a
+- a
 </td></tr></table>
 </td></tr></table>
 
@@ -38,12 +38,12 @@ eow without M .
 🔍 general information
 </h2>
 <table><tr><td>
-* 🏷️<b>full name</b>: Leo LeowLyme.
-* 🔑<b>key</b>: Leow.
-* 🚻<b>gender</b>: ♂️ male.
-* 🍽️<b>diet</b>: 🍎fruit, 🥦veggie, 🍗meat, 🍚flour, ⚡electricity.
-* 😋<b>favorite food</b>: 🥜peanut.
-* 😃<b>favorite toy</b>: 📐quantum delta.
+- 🏷️<b>full name</b>: Leo LeowLyme.
+- 🔑<b>key</b>: Leow.
+- 🚻<b>gender</b>: ♂️ male.
+- 🍽️<b>diet</b>: 🍎fruit, 🥦veggie, 🍗meat, 🍚flour, ⚡electricity.
+- 😋<b>favorite food</b>: 🥜peanut.
+- 😃<b>favorite toy</b>: 📐quantum delta.
 </td></tr></table>
 </td></tr></table>
 
