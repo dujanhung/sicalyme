@@ -6,7 +6,7 @@ LeowLyme
 <table><tr><td>
 <img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/LeowLyme.svg">
 </td></tr></table>
-LeowLyme as shown in perceptive camera.
+LeowLyme image.
 <br>
 <sub>
 made with svg file.
