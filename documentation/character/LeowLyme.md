@@ -13,8 +13,6 @@ made with svg file.
 </sub>
 </td></tr></table>
 
-<bar>
-
 <table><tr><td>
 
 <h2>
