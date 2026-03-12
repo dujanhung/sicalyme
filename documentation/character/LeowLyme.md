@@ -150,16 +150,6 @@ favorite toy
 * secure the LIME castle within airborne.
 
 ==📎 gallery==
-*icon
-<gallery>
-File:LeowLyme-v1.0.0.png|256x256px|v1.0.0
-File:LeowLyme-v1.0.2.png|256x256px|v1.0.2
-File:LeowLyme-v1.0.3.png|256x256px|v1.0.3
-</gallery>
-*svg
-<gallery>
-File:LeowLyme-v1.0.3.svg|256x256px|v1.0.3
-</gallery>
 *[https://dash.makersempire.com/designs/753f10c2-d838-4150-9b02-c0d325b6f431?uid=true&download=true&token=de317cb3fd0b3fa15831e007dbe7e847 3D preview in MakersEmpire]
 
 ==💡 reference==
