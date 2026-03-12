@@ -13,13 +13,17 @@ made with svg file.
 </sub>
 </td></tr></table>
 
+<table><tr><td>
 ==🔑 quote==
 <h3>
 eow without M .
 </h3>
+</td></tr></table>
 
+<table><tr><td>
 ==🤔 about==
 * a
+</td></tr></table>
 
 ==🔍 general information==
 * 🏷️<b>full name</b>: Leo LeowLyme.
