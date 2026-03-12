@@ -14,7 +14,6 @@ made with svg file.
 </td></tr></table>
 
 <table><tr><td>
-
 <h2>
 🔑 quote
 </h2>
@@ -34,13 +33,19 @@ eow without M .
 </td></tr></table>
 </td></tr></table>
 
-==🔍 general information==
+<table><tr><td>
+<h2>
+🔍 general information
+</h2>
+<table><tr><td>
 * 🏷️<b>full name</b>: Leo LeowLyme.
 * 🔑<b>key</b>: Leow.
 * 🚻<b>gender</b>: ♂️ male.
 * 🍽️<b>diet</b>: 🍎fruit, 🥦veggie, 🍗meat, 🍚flour, ⚡electricity.
 * 😋<b>favorite food</b>: 🥜peanut.
 * 😃<b>favorite toy</b>: 📐quantum delta.
+</td></tr></table>
+</td></tr></table>
 
 ==👀 appearance==
 * he is a tank, small, light weight.
