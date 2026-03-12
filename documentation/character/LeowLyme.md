@@ -39,22 +39,49 @@ eow without M .
 </h2>
 <table><tr><td>
 <table><tr><td>
-🏷️<b>full name</b>: Leo LeowLyme.
+🏷️
+<b>
+full name
+</b>
+: Leo LeowLyme.
 </td></tr></table>
 <table><tr><td>
-🔑<b>name shortcut</b>: Leow.
+🔑
+<b>
+name shortcut
+</b>
+: Leow.
 </td></tr></table>
 <table><tr><td>
-🚻<b>gender</b>: ♂️ male.
+🚻
+<b>
+gender
+</b>
+: ♂️ male.
 </td></tr></table>
 <table><tr><td>
-🍽️<b>diet</b>: 🍎fruit, 🥦veggie, 🍗meat, 🍚flour, ⚡electricity.
+🍽️
+<b>
+diet
+</b>
+: 🍎fruit, 🥦veggie, 🍗meat, 🍚flour, ⚡electricity.
 </td></tr></table>
 <table><tr><td>
-😋<b>favorite food</b>: 🥜peanut.
+😋
+<b>
+favorite food
+</b>
+: 🥜peanut.
 </td></tr></table>
 <table><tr><td>
-😃<b>favorite toy</b>: 📐quantum delta.<sup>[undocumented]</sup>
+😃
+<b>
+favorite toy
+</b>
+: 📐quantum delta.
+<sup>
+[undocumented]
+</sup>
 </td></tr></table>
 </td></tr></table>
 </td></tr></table>
