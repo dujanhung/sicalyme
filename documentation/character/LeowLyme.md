@@ -48,7 +48,7 @@ full name
 <table><tr><td>
 🔑
 <b>
-name shortcut
+alias
 </b>
 : Leow.
 </td></tr></table>
