@@ -2,7 +2,7 @@
 LeowLyme
 </h2>
 
-<table size=2><tr><td>
+<table border="3"><tr><td>
 <table><tr><td>
 <img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/LeowLyme.svg">
 </td></tr></table>
