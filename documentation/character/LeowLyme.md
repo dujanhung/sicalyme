@@ -37,7 +37,6 @@ eow without M .
 <h2>
 🔍 general information
 </h2>
-a
 <table><tr><td>
 <table><tr><td>
 <h2>
