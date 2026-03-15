@@ -7,11 +7,11 @@ LeowLyme
 <img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/LeowLyme.svg">
 </td></tr></table>
 <table><tr><td>
-LeowLyme image.
+LeowLyme image
 </td></tr></table>
 <table><tr><td>
 <sub>
-made with <a href="https://en.softonic.com/download/paintersvg/android/post-download?dt=internalDownload">PainterSVG</a> app.
+made with <a href="https://en.softonic.com/download/paintersvg/android/post-download?dt=internalDownload">PainterSVG</a> app
 </sub>
 </td></tr></table>
 </td></tr></table>
