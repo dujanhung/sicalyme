@@ -41,9 +41,9 @@ a
 <table><tr><td>
 <table><tr><td>
 🏷️ 
-<b>
+<h3>
 full name
-</b>
+</h3>
 :
 <table><tr><td>
 Leo LeowLyme
@@ -51,9 +51,9 @@ Leo LeowLyme
 </td></tr></table>
 <table><tr><td>
 🔑 
-<b>
+<h3>
 alias
-</b>
+</h3>
 :
 <table><tr><td>
 Leow
@@ -61,9 +61,9 @@ Leow
 </td></tr></table>
 <table><tr><td>
 🚻 
-<b>
+<h3>
 gender
-</b>
+</h3>
 :
 <table><tr><td>
 ♂️ male
@@ -71,9 +71,9 @@ gender
 </td></tr></table>
 <table><tr><td>
 🍽️ 
-<b>
+<h3>
 diet
-</b>
+</h3>
 :
 <table><tr><td>
 🍎 fruit
@@ -85,7 +85,7 @@ diet
 🍗 meat
 </td></tr></table>
 <table><tr><td>
-🍚flour
+🍚 flour
 </td></tr></table>
 <table><tr><td>
 ⚡ electricity.
@@ -93,9 +93,9 @@ diet
 </td></tr></table>
 <table><tr><td>
 😋 
-<b>
+<h3>
 favorite food
-</b>
+</h3>
 :
 <table><tr><td>
 🥜 peanut
@@ -103,9 +103,9 @@ favorite food
 </td></tr></table>
 <table><tr><td>
 😃 
-<b>
+<h3>
 favorite toy
-</b>
+</h3>
 :
 <table><tr><td>
 📐 quantum delta.
