@@ -63,7 +63,10 @@ Leow
 <b>
 gender
 </b>
-: ♂️ male.
+:
+<table><tr><td>
+♂️ male
+</td></tr></table>
 </td></tr></table>
 <table><tr><td>
 🍽️
