@@ -22,7 +22,7 @@ made with <a href="https://en.softonic.com/download/paintersvg/android/post-down
 </h2>
 <table><tr><td>
 <h3>
-M before EOW is L.
+L before EOW makes M can't say that.
 </h3>
 </td></tr></table>
 </td></tr></table>
