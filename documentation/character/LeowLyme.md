@@ -40,7 +40,7 @@ eow without M .
 a
 <table><tr><td>
 <table><tr><td>
-🏷️
+🏷️ 
 <b>
 full name
 </b>
@@ -50,7 +50,7 @@ Leo LeowLyme
 </td></tr></table>
 </td></tr></table>
 <table><tr><td>
-🔑
+🔑 
 <b>
 alias
 </b>
@@ -60,7 +60,7 @@ Leow
 </td></tr></table>
 </td></tr></table>
 <table><tr><td>
-🚻
+🚻 
 <b>
 gender
 </b>
@@ -70,45 +70,45 @@ gender
 </td></tr></table>
 </td></tr></table>
 <table><tr><td>
-🍽️
+🍽️ 
 <b>
 diet
 </b>
 :
 <table><tr><td>
-🍎fruit
+🍎 fruit
 </td></tr></table>
 <table><tr><td>
-🥦veggie
+🥦 veggie
 </td></tr></table>
 <table><tr><td>
-🍗meat
+🍗 meat
 </td></tr></table>
 <table><tr><td>
 🍚flour
 </td></tr></table>
 <table><tr><td>
-⚡electricity.
+⚡ electricity.
 </td></tr></table>
 </td></tr></table>
 <table><tr><td>
-😋
+😋 
 <b>
 favorite food
 </b>
 :
 <table><tr><td>
-🥜peanut
+🥜 peanut
 </td></tr></table>
 </td></tr></table>
 <table><tr><td>
-😃
+😃 
 <b>
 favorite toy
 </b>
 :
 <table><tr><td>
-📐quantum delta.
+📐 quantum delta.
 <sup>
 [undocumented]
 </sup>
