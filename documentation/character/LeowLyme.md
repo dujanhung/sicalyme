@@ -14,9 +14,8 @@ made with svg file.
 </td></tr></table>
 
 <table><tr><td>
-🔑 
 <h2>
-quote
+🔑 quote
 </h2>
 <table><tr><td>
 <h3>
@@ -41,36 +40,32 @@ eow without M .
 a
 <table><tr><td>
 <table><tr><td>
-🏷️ 
 <h2>
-full name
+🏷️ full name
 </h2>
 <table><tr><td>
 Leo LeowLyme
 </td></tr></table>
 </td></tr></table>
 <table><tr><td>
-🔑 
 <h2>
-alias
+🔑 alias
 </h2>
 <table><tr><td>
 Leow
 </td></tr></table>
 </td></tr></table>
 <table><tr><td>
-🚻 
 <h2>
-gender
+🚻 gender
 </h2>
 <table><tr><td>
 ♂️ male
 </td></tr></table>
 </td></tr></table>
 <table><tr><td>
-🍽️ 
 <h2>
-diet
+🍽️ diet
 </h2>
 <table><tr><td>
 🍎 fruit
@@ -89,18 +84,16 @@ diet
 </td></tr></table>
 </td></tr></table>
 <table><tr><td>
-😋 
 <h2>
-favorite food
+😋 favorite food
 </h2>
 <table><tr><td>
 🥜 peanut
 </td></tr></table>
 </td></tr></table>
 <table><tr><td>
-😃 
 <h2>
-favorite toy
+😃 favorite toy
 </h2>
 <table><tr><td>
 📐 quantum delta.
