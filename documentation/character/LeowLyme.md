@@ -8,11 +8,11 @@ LeowLyme
 </td></tr></table>
 <table><tr><td>
 LeowLyme image.
+</td></tr></table>
 <table><tr><td>
 <sub>
 made with svg file.
 </sub>
-</td></tr></table>
 </td></tr></table>
 </td></tr></table>
 
