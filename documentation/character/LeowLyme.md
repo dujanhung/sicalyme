@@ -22,7 +22,7 @@ made with <a href="https://en.softonic.com/download/paintersvg/android/post-down
 </h2>
 <table><tr><td>
 <h3>
-a typo that EOW without M.
+a typo that EOW without M
 </h3>
 </td></tr></table>
 </td></tr></table>
