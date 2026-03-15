@@ -45,7 +45,7 @@ full name
 </b>
 :
 <table><tr><td>
-Leo LeowLyme.
+Leo LeowLyme
 </td></tr></table>
 </td></tr></table>
 <table><tr><td>
@@ -53,7 +53,10 @@ Leo LeowLyme.
 <b>
 alias
 </b>
-: Leow.
+:
+<table><tr><td>
+Leow
+</td></tr></table>
 </td></tr></table>
 <table><tr><td>
 🚻
