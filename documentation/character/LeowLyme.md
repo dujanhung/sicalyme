@@ -14,8 +14,9 @@ made with svg file.
 </td></tr></table>
 
 <table><tr><td>
+🔑 
 <h2>
-🔑 quote
+quote
 </h2>
 <table><tr><td>
 <h3>
