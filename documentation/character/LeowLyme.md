@@ -11,7 +11,7 @@ LeowLyme image.
 </td></tr></table>
 <table><tr><td>
 <sub>
-made with svg file.
+made with PainterSVG app.
 </sub>
 </td></tr></table>
 </td></tr></table>
