@@ -37,6 +37,7 @@ eow without M .
 <h2>
 🔍 general information
 </h2>
+a
 <table><tr><td>
 <table><tr><td>
 🏷️
@@ -95,17 +96,23 @@ diet
 <b>
 favorite food
 </b>
-: 🥜peanut.
+:
+<table><tr><td>
+🥜peanut
+</td></tr></table>
 </td></tr></table>
 <table><tr><td>
 😃
 <b>
 favorite toy
 </b>
-: 📐quantum delta.
+:
+<table><tr><td>
+📐quantum delta.
 <sup>
 [undocumented]
 </sup>
+</td></tr></table>
 </td></tr></table>
 </td></tr></table>
 </td></tr></table>
