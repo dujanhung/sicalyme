@@ -22,7 +22,7 @@ made with <a href="https://en.softonic.com/download/paintersvg/android/post-down
 </h2>
 <table><tr><td>
 <h3>
-don't use M before EOW, use L instead.
+M before EOW is L.
 </h3>
 </td></tr></table>
 </td></tr></table>
