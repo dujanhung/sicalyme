@@ -43,7 +43,10 @@ eow without M .
 <b>
 full name
 </b>
-: Leo LeowLyme.
+:
+<table><tr><td>
+Leo LeowLyme.
+</td></tr></table>
 </td></tr></table>
 <table><tr><td>
 🔑
