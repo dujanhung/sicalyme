@@ -44,6 +44,7 @@ a typo that EOW without M
 🔍 general information
 </h2>
 <table><tr><td>
+<table><tr><td>
 <h2>
 🏷️ full name
 </h2>
@@ -104,6 +105,7 @@ Leow
 <sup>
 [undocumented]
 </sup>
+</td></tr></table>
 </td></tr></table>
 </td></tr></table>
 </td></tr></table>
