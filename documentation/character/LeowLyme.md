@@ -322,7 +322,7 @@ Leow
 </td></tr></table>
 </details>
 
-<section>
+<cut>
 
 <details open>
 <summary>
@@ -339,5 +339,3 @@ Leow
 </td></tr></table>
 </td></tr></table>
 </details>
-
-</section>
