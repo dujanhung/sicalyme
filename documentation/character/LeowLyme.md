@@ -156,6 +156,10 @@ Leow
 </td></tr></table>
 </td></tr></table>
 
+<details>
+<summary>
+👀
+</summary>
 <table><tr><td>
 <h2>
 👀 appearance
@@ -172,6 +176,7 @@ Leow
 
 </td></tr></table>
 </td></tr></table>
+</details>
 
 ==⚙️ functionality==
 * he don't need a driver, because he is controlled by an offline AI system.
