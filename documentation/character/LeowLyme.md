@@ -11,7 +11,7 @@ LeowLyme
 <img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/LeowLyme.svg">
 </td></tr></table>
 <table><tr><td>
-<details open>
+<details>
 <summary>
 ©️
 </summary>
