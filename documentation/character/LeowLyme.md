@@ -204,9 +204,22 @@ Leow
 </td></tr></table>
 </details>
 
-==🗓️ history==
+<details>
+<summary>
+🗓️
+</summary>
+<table><tr><td>
+<h2>
+🗓️ history
+</h2>
+<table><tr><td>
+
 * his color used to be purple and blue. however, due to swimming in the lime ocean for too long and often, his skin react with those salty water, which leads to it's color changed to lime and brown.
 * his first name is <b>MeowLime</b>
+
+</td></tr></table>
+</td></tr></table>
+</details>
 
 ==🛠️ physic==
 * ⚖️<b>mass</b>: 20 kg
