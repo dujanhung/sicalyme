@@ -14,7 +14,7 @@ LeowLyme
 LeowLyme image
 </td></tr></table>
 <details open>
-<summary>.</summary>
+<summary>credit</summary>
 <table><tr><td>
 <sub>
 made with 
