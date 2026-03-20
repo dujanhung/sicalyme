@@ -322,7 +322,7 @@ Leow
 </td></tr></table>
 </details>
 
-<details>
+<details open>
 <summary>
 🛣️
 </summary>
