@@ -57,6 +57,10 @@ a typo that EOW without M
 </td></tr></table>
 </details>
 
+<details>
+<summary>
+🤔
+</summary>
 <table><tr><td>
 <h2>
 🤔 about
@@ -65,6 +69,7 @@ a typo that EOW without M
 a
 </td></tr></table>
 </td></tr></table>
+</details>
 
 <table><tr><td>
 <h2>
