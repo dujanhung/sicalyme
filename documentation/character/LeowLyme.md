@@ -16,7 +16,7 @@ LeowLyme image
 <table><tr><td>
 <details open>
 <summary>
-©️ credit
+©️
 </summary>
 <h2>
 ©️ credit
