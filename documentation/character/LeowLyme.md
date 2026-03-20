@@ -10,6 +10,8 @@ LeowLyme
 <table><tr><td>
 LeowLyme image
 </td></tr></table>
+
+<details>
 <table><tr><td>
 <sub>
 made with 
@@ -18,6 +20,8 @@ PainterSVG</a></b>
 app
 </sub>
 </td></tr></table>
+</details>
+
 </td></tr></table>
 </td></tr></table>
 
