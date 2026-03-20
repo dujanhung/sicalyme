@@ -16,10 +16,11 @@ LeowLyme image
 <table><tr><td>
 <details open>
 <summary>
+.
+</summary>
 <h2>
 credit
 </h2>
-</summary>
 <table><tr><td>
 <table><tr><td>
 author: 
