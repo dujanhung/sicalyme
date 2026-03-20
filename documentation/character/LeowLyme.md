@@ -178,7 +178,15 @@ Leow
 </td></tr></table>
 </details>
 
-==⚙️ functionality==
+<details>
+<summary>
+⚙️
+</summary>
+<table><tr><td>
+<h2>
+⚙️ functionality
+</h2>
+<table><tr><td>
 * he don't need a driver, because he is controlled by an offline AI system.
 * he can communicate to human. although he can't speak, he can use other ways to communicate.
 * his neck can twist around freely, with motor for source force, and absorber for stability.
@@ -190,6 +198,10 @@ Leow
 * his hearing ability can detect the low and high frequency sounds.
 * his bracket is mainly used as a passenger seat for a human. also, it can store other items, and liquid. however, long-term liquid contact is harmful, as it eat though the bracket over time.
 * his tail is mainly used for balance. also, it can grasp items.
+
+</td></tr></table>
+</td></tr></table>
+</details>
 
 ==🗓️ history==
 * his color used to be purple and blue. however, due to swimming in the lime ocean for too long and often, his skin react with those salty water, which leads to it's color changed to lime and brown.
