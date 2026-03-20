@@ -83,6 +83,10 @@ a
 </td></tr></table>
 </details>
 
+</td></tr></table>
+</td></tr></table>
+</details>
+
 <details>
 <summary>
 🔍
@@ -155,10 +159,6 @@ Leow
 </sup>
 </td></tr></table>
 </td></tr></table>
-</td></tr></table>
-</td></tr></table>
-</details>
-
 </td></tr></table>
 </td></tr></table>
 </details>
