@@ -13,6 +13,7 @@ LeowLyme
 <table><tr><td>
 LeowLyme image
 </td></tr></table>
+<table><tr><td>
 <details open>
 <summary>credit</summary>
 <table><tr><td>
@@ -27,6 +28,7 @@ app:
 PainterSVG</a></b>
 </td></tr></table>
 </details>
+</td></tr></table>
 </td></tr></table>
 </td></tr></table>
 
