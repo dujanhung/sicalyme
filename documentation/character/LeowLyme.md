@@ -326,7 +326,7 @@ Leow
  
 </h2>
 
-<details open>
+<details>
 <summary>
 🛣️
 </summary>
