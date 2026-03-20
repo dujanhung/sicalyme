@@ -245,7 +245,16 @@ Leow
 </td></tr></table>
 </details>
 
-==🧬 biology==
+<details>
+<summary>
+🧬
+</summary>
+<table><tr><td>
+<h2>
+🧬 biology
+</h2>
+<table><tr><td>
+
 * 🌬️<b>lung volume</b>: 2 m<sup>3</sup>
 * 💧<b>urine volume</b>: 200 mL
 * 💉<b>blood volume</b>: 7 L
@@ -253,6 +262,10 @@ Leow
 * 🧯<b>blood pressure</b>: minimum 70 mmHg, maximum 120 mmHg
 
 * he can eat food, and due to eating foods, LeowLyme can be able to release waste as will.
+
+</td></tr></table>
+</td></tr></table>
+</details>
 
 ==🔌 application==
 * secure the LIME castle within airborne.
