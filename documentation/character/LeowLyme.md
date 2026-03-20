@@ -2,6 +2,10 @@
 LeowLyme
 </h2>
 
+<details>
+<summary>
+🖼️
+</summary>
 <table><tr><td>
 <h2>
 🖼️ icon
@@ -35,6 +39,7 @@ PainterSVG</a></b>
 </td></tr></table>
 </td></tr></table>
 </td></tr></table>
+<details>
 
 <table><tr><td>
 <h2>
