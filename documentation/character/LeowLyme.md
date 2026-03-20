@@ -187,6 +187,7 @@ Leow
 ⚙️ functionality
 </h2>
 <table><tr><td>
+
 * he don't need a driver, because he is controlled by an offline AI system.
 * he can communicate to human. although he can't speak, he can use other ways to communicate.
 * his neck can twist around freely, with motor for source force, and absorber for stability.
