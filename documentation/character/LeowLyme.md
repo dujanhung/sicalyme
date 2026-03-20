@@ -316,11 +316,24 @@ Leow
 </h2>
 <table><tr><td>
 
-*[[The_LeowLyme|the LeowLyme]]
+* The_LeowLyme
 
 </td></tr></table>
 </td></tr></table>
 </details>
 
-==🔗 link==
-* [[Sicalyme_Wiki|<b>return to home page</b>]]
+<details>
+<summary>
+🛣️
+</summary>
+<table><tr><td>
+<h2>
+🛣️ navigation
+</h2>
+<table><tr><td>
+
+* a
+
+</td></tr></table>
+</td></tr></table>
+</details>
