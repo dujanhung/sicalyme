@@ -11,7 +11,13 @@ LeowLyme image
 </td></tr></table>
 <table><tr><td>
 <sub>
-made with <a href="https://en.softonic.com/download/paintersvg/android/post-download?dt=internalDownload">PainterSVG</a> app
+made with 
+<b>
+<a href="https://en.softonic.com/download/paintersvg/android/post-download?dt=internalDownload">
+PainterSVG
+</a>
+</b> 
+app
 </sub>
 </td></tr></table>
 </td></tr></table>
