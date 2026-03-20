@@ -127,9 +127,12 @@ Leow
 </td></tr></table>
 </td></tr></table>
 
+<table><tr><td>
 <h2>
 👀 appearance
 </h2>
+<table><tr><td>
+
 * he has a head which is attached on a motorized shaft.
 * he has 2 parallel tracks on each side, each track has 4 wheels.
 * he has a cannon in front of his face. 
@@ -137,6 +140,9 @@ Leow
 * he has 2 triangle ears on top of his head, each one face opposite to each other.
 * he has a bracket from back of his head.
 * he has a tail with 4 bones, each bones are attached with universal joints. the tail-tip is cropped-shape.
+
+</td></tr></table>
+</td></tr></table>
 
 ==⚙️ functionality==
 * he don't need a driver, because he is controlled by an offline AI system.
