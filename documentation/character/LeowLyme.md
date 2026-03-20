@@ -21,6 +21,7 @@ credit
 </h2>
 </summary>
 <table><tr><td>
+<table><tr><td>
 author: 
 <code>
 Dương Chấn Hưng
@@ -30,6 +31,7 @@ Dương Chấn Hưng
 app: 
 <b><a href="https://en.softonic.com/download/paintersvg/android/post-download?dt=internalDownload">
 PainterSVG</a></b>
+</td></tr></table>
 </td></tr></table>
 </details>
 </td></tr></table>
