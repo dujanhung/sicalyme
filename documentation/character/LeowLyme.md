@@ -39,7 +39,7 @@ PainterSVG</a></b>
 </td></tr></table>
 </td></tr></table>
 </td></tr></table>
-<details>
+</details>
 
 <table><tr><td>
 <h2>
