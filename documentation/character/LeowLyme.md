@@ -290,8 +290,21 @@ Leow
 </td></tr></table>
 </details>
 
-==📎 gallery==
-*<a href="https://dash.makersempire.com/designs/753f10c2-d838-4150-9b02-c0d325b6f431?uid=true&download=true&token=de317cb3fd0b3fa15831e007dbe7e847"> 3D preview in MakersEmpire</a>
+<details>
+<summary>
+📎
+</summary>
+<table><tr><td>
+<h2>
+📎 gallery
+</h2>
+<table><tr><td>
+
+* <a href="https://dash.makersempire.com/designs/753f10c2-d838-4150-9b02-c0d325b6f431?uid=true&download=true&token=de317cb3fd0b3fa15831e007dbe7e847"> 3D preview in MakersEmpire</a>
+
+</td></tr></table>
+</td></tr></table>
+</details>
 
 ==💡 reference==
 *[[The_LeowLyme|the LeowLyme]]
