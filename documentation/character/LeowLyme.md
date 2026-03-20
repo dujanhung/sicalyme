@@ -10,10 +10,8 @@ LeowLyme
 <table><tr><td>
 LeowLyme image
 </td></tr></table>
-
 <details open>
 <summary>a</summary>
-
 <table><tr><td>
 <sub>
 made with 
@@ -23,7 +21,6 @@ app
 </sub>
 </td></tr></table>
 </details>
-
 </td></tr></table>
 </td></tr></table>
 
