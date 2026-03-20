@@ -35,7 +35,7 @@ a typo that EOW without M
 🤔 about
 </h2>
 <table><tr><td>
-- a
+a
 </td></tr></table>
 </td></tr></table>
 
