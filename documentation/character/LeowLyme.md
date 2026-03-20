@@ -71,6 +71,10 @@ a
 </td></tr></table>
 </details>
 
+<details>
+<summary>
+🔍
+</summary>
 <table><tr><td>
 <h2>
 🔍 general information
@@ -133,7 +137,7 @@ Leow
 😃 favorite toy
 </h2>
 <table><tr><td>
-📐 quantum delta.
+📐 quantum delta
 <sup>
 [undocumented]
 </sup>
@@ -141,6 +145,7 @@ Leow
 </td></tr></table>
 </td></tr></table>
 </td></tr></table>
+</details>
 
 <table><tr><td>
 <h2>
