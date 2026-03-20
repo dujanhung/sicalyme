@@ -11,7 +11,7 @@ LeowLyme
 LeowLyme image
 </td></tr></table>
 
-<details label="a" open="yes">
+<details open="yes">
 <table><tr><td>
 <sub>
 made with 
