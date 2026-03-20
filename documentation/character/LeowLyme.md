@@ -16,6 +16,12 @@ LeowLyme image
 <details open>
 <summary>credit</summary>
 <table><tr><td>
+author: 
+<code>
+Dương Chấn Hưng
+</code>
+</td></tr></table>
+<table><tr><td>
 <sub>
 made with 
 <b><a href="https://en.softonic.com/download/paintersvg/android/post-download?dt=internalDownload">
