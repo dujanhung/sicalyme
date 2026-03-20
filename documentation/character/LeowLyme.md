@@ -7,11 +7,11 @@ LeowLyme
 🖼️ icon
 </h2>
 <table><tr><td>
+<h2>
+LeowLyme icon
+</h2>
 <table><tr><td>
 <img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/LeowLyme.svg">
-</td></tr></table>
-<table><tr><td>
-LeowLyme image
 </td></tr></table>
 <table><tr><td>
 <details open>
