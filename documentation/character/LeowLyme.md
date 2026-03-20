@@ -7,11 +7,12 @@ LeowLyme
 <table><tr><td>
 <img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/LeowLyme.svg">
 </td></tr></table>
+<details open>
+<summary>
 <table><tr><td>
 LeowLyme image
 </td></tr></table>
-<details open>
-<summary>a</summary>
+</summary>
 <table><tr><td>
 <sub>
 made with 
