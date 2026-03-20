@@ -221,14 +221,29 @@ Leow
 </td></tr></table>
 </details>
 
-==🛠️ physic==
+
+<details>
+<summary>
+🛠️
+</summary>
+<table><tr><td>
+<h2>
+🛠️ physic
+</h2>
+<table><tr><td>
+
 * ⚖️<b>mass</b>: 20 kg
 * 📏<b>height</b>: 3.125 m
 * 🛣️<b>movement speed</b>: 50 km/h
 * 💪<b>push/pull strength</b>: 100 N
 * ⚡<b>battery voltage</b>: 25 V
 
-* he cannot swim or fly, however he can move on ground very fast.
+* he cannot swim or fly.
+* he can move on ground, and jump.
+
+</td></tr></table>
+</td></tr></table>
+</details>
 
 ==🧬 biology==
 * 🌬️<b>lung volume</b>: 2 m<sup>3</sup>
