@@ -41,6 +41,10 @@ PainterSVG</a></b>
 </td></tr></table>
 </details>
 
+<details>
+<summary>
+🔑
+</summary>
 <table><tr><td>
 <h2>
 🔑 quote
@@ -51,6 +55,7 @@ a typo that EOW without M
 </h3>
 </td></tr></table>
 </td></tr></table>
+</details>
 
 <table><tr><td>
 <h2>
