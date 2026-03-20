@@ -306,8 +306,21 @@ Leow
 </td></tr></table>
 </details>
 
-==💡 reference==
+<details>
+<summary>
+💡
+</summary>
+<table><tr><td>
+<h2>
+💡 reference
+</h2>
+<table><tr><td>
+
 *[[The_LeowLyme|the LeowLyme]]
+
+</td></tr></table>
+</td></tr></table>
+</details>
 
 ==🔗 link==
 * [[Sicalyme_Wiki|<b>return to home page</b>]]
