@@ -22,12 +22,9 @@ Dương Chấn Hưng
 </code>
 </td></tr></table>
 <table><tr><td>
-<sub>
-made with 
+app: 
 <b><a href="https://en.softonic.com/download/paintersvg/android/post-download?dt=internalDownload">
-PainterSVG</a></b> 
-app
-</sub>
+PainterSVG</a></b>
 </td></tr></table>
 </details>
 </td></tr></table>
