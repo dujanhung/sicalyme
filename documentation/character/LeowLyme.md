@@ -2,7 +2,7 @@
 LeowLyme
 </h2>
 
-<p center>
+<p style="alignment:center">
 <details>
 <summary>
 🏷️
