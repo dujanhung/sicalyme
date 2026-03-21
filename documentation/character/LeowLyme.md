@@ -4,7 +4,7 @@ LeowLyme
 
 <details>
 <summary>
-🏷️🏷️🏷️🏷️🏷️
+🏷️
 </summary>
 <table><tr><td>
 <h2>
