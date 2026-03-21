@@ -300,7 +300,9 @@ Leow
 </h2>
 <table><tr><td>
 
-<iframe src="https://dash.makersempire.com/designs/753f10c2-d838-4150-9b02-c0d325b6f431?uid=true&download=true&token=de317cb3fd0b3fa15831e007dbe7e847"/>
+<a href="https://dash.makersempire.com/designs/753f10c2-d838-4150-9b02-c0d325b6f431?uid=true&download=true&token=de317cb3fd0b3fa15831e007dbe7e847">
+LeowLyme 3D preview in MakersEmpire
+</a>
 
 </td></tr></table>
 </td></tr></table>
