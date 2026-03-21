@@ -2,11 +2,6 @@
 LeowLyme
 </h2>
 
-<details open>
-<summary>
-.
-</summary>
-
 <details>
 <summary>
 🏷️
@@ -327,8 +322,6 @@ LeowLyme 3D preview in MakersEmpire
 
 </td></tr></table>
 </td></tr></table>
-</details>
-
 </details>
 
 <h2>
