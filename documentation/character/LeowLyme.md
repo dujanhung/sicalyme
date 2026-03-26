@@ -25,29 +25,6 @@ LeowLyme
 <img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/LeowLyme.svg">
 </td></tr></table>
 
-<details>
-<summary>
-©️
-</summary>
-<table><tr><td>
-<h2>
-©️ credit
-</h2>
-<table><tr><td>
-<table><tr><td>
-author: 
-<code>
-Dương Chấn Hưng
-</code>
-</td></tr></table>
-<table><tr><td>
-app: 
-<b><a href="https://en.softonic.com/download/paintersvg/android/post-download?dt=internalDownload">
-PainterSVG</a></b>
-</td></tr></table>
-</td></tr></table>
-</details>
-
 </td></tr></table>
 </td></tr></table>
 </td></tr></table>
