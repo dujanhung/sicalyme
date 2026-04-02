@@ -21,7 +21,7 @@ LeowLyme
 🖼️ icon
 </h2>
 <table><tr><td>
-<img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/LeowLyme.svg">
+<img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/character/LeowLyme.svg">
 </td></tr></table>
 </td></tr></table>
 </details>
