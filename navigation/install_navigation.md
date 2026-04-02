@@ -10,7 +10,7 @@ choose one navigation entry.
 
 executable apk , exe.
 
-or, original source code in Godot.
+or, original source code.
 
 </td></td></table>
 
