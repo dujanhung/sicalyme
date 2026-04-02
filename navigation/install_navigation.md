@@ -1,5 +1,7 @@
 <h1>📥 install sicalyme</h1>
 
+<img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/setting.svg">
+
 <table><tr><td>
 
 <h2>🤔 about</h2>
