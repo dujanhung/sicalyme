@@ -45,6 +45,6 @@ stroke:
 </g>
 </defs>
 
-<use href="sicalyme_symbol_eye"/>
+<use href="uid(sicalyme_symbol_eye)"/>
 
 </svg>
