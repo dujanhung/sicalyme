@@ -10,7 +10,7 @@ choose one navigation entry.
 
 executable apk , exe.
 
-or, original source code.
+or, source code.
 
 </td></td></table>
 
