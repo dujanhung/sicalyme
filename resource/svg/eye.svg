@@ -1,0 +1,44 @@
+<svg width="720" height="720" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+<style>
+.sicalyme_color_olive
+{
+fill:
+#6d7500
+;
+stroke:
+#555a00
+}
+.sicalyme_color_brown
+{
+fill:
+#7f4a00
+;
+stroke:
+#5e3201
+}
+.sicalyme_color_white
+{
+fill:
+#d0d0d0
+;
+stroke:
+#aaa
+}
+.sicalyme_color_black
+{
+fill:
+#707070
+;
+stroke:
+#505050
+}
+</style>
+<defs>
+<g id="sicalyme_symbol_eye">
+<circle r="170" cx="360" cy="360" class="sicalyme_color_brown"/>
+<circle r="110" cx="360" cy="360" class="sicalyme_color_white"/>
+<path d="M360 400C338 400 320 382 320 360 320 338 338 320 360 320 382 320 400 338 400 360H440C440 316 404 280 360 280 316 280 280 316 280 360 280 404 316 440 360 440Z" class="sicalyme_color_black"/>
+</g>
+</defs>
+<use href="sicalyme_symbol_eye"/>
+</svg>
