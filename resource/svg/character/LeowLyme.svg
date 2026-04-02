@@ -16,6 +16,8 @@ https://en.softonic.com/download/paintersvg/android/post-download?dt=internalDow
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:psvg="http://www.paintersvg.com/namespace.html" id="LeowLyme" width="720" height="720">
 
+<g>
+
 <animateTransform
 attributeName="transform"
 attributeType="XML"
@@ -101,6 +103,8 @@ repeatCount="indefinite"
 <path d="M 346.866,358.9951 C 348.4448,356.5593 386.6397,350.1166 389.5036,352.1215 392.3676,354.1263 391.4026,388.2943 389.6609,391.101 387.919,393.9078 351.1674,401.7346 348.3003,398.2966 345.4332,394.8585 345.2872,361.4309 346.866,358.9951 Z" style="fill:#55310E;fill-opacity:1;stroke:none;"/>
 <path d="M 349.9318,361.3521 C 351.2883,359.2592 384.107,353.7234 386.5678,355.446 389.0287,357.1686 388.1996,386.5273 386.703,388.939 385.2063,391.3507 353.6277,398.0759 351.1642,395.1217 348.7006,392.1675 348.5752,363.4451 349.9318,361.3521 Z" style="fill:#5D3A19;fill-opacity:1;stroke:none;"/>
 <path d="M 353.0331,363.7463 C 354.1676,361.996 381.6147,357.3663 383.6726,358.8069 385.7307,360.2476 385.0374,384.8009 383.7857,386.8178 382.534,388.8348 356.1241,394.4592 354.0638,391.9885 352.0035,389.5179 351.8986,365.4968 353.0331,363.7463 Z" style="fill:#664424;fill-opacity:1;stroke:none;"/>
+</g>
+
 </g>
 
 </svg>
