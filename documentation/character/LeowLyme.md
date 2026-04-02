@@ -164,7 +164,8 @@ Leow
 </summary>
 <table><tr><td>
 <h2>
-<img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/icon/setting.svg" width="100" height="100"> functionality
+<img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/icon/setting.svg" width="64" height="64">
+functionality
 </h2>
 <table><tr><td>
 
