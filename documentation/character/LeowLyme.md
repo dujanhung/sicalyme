@@ -160,11 +160,11 @@ Leow
 
 <details>
 <summary>
-<img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/icon/setting.svg" width="16" height="16">
+⚙️
 </summary>
 <table><tr><td>
 <h2>
-⚙️ functionality
+<img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/icon/setting.svg" width="16" height="16"> functionality
 </h2>
 <table><tr><td>
 
