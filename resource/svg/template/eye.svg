@@ -17,14 +17,6 @@ fill:
 stroke:
 #aaa
 }
-.sicalyme_color_grey
-{
-fill:
-#b0b0b0
-;
-stroke:
-#909090
-}
 .sicalyme_color_black
 {
 fill:
