@@ -14,7 +14,50 @@ https://en.softonic.com/download/paintersvg/android/post-download?dt=internalDow
 
 -->
 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:psvg="http://www.paintersvg.com/namespace.html" id="LeowLyme" width="720" height="720">
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720">
+
+<style>
+.sicalyme_color_olive
+{
+fill:
+#6d7500
+;
+stroke:
+#555a00
+}
+.sicalyme_color_brown
+{
+fill:
+#7f4a00
+;
+stroke:
+#5e3201
+}
+.sicalyme_color_white
+{
+fill:
+#d0d0d0
+;
+stroke:
+#aaa
+}
+.sicalyme_color_grey
+{
+fill:
+#b0b0b0
+;
+stroke:
+#909090
+}
+.sicalyme_color_black
+{
+fill:
+#707070
+;
+stroke:
+#505050
+}
+</style>
 
 <g psvg:layer="tail">
 <path d="
