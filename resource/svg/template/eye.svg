@@ -1,47 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
-<style>
-.sicalyme_color_olive
-{
-fill:
-#6d7500
-;
-stroke:
-#555a00
-}
-.sicalyme_color_brown
-{
-fill:
-#7f4a00
-;
-stroke:
-#5e3201
-}
-.sicalyme_color_white
-{
-fill:
-#d0d0d0
-;
-stroke:
-#aaa
-}
-.sicalyme_color_grey
-{
-fill:
-#b0b0b0
-;
-stroke:
-#909090
-}
-.sicalyme_color_black
-{
-fill:
-#707070
-;
-stroke:
-#505050
-}
-</style>
+<style href="https://github.com/dujanhung/sicalyme/blob/main/resource/css_svg/sicalyme_color.css"/>
 <circle r="170" cx="360" cy="360"
 class="sicalyme_color_brown"
 />
