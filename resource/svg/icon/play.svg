@@ -72,6 +72,7 @@ values="
 "
 dur="3s"
 repeatCount="indefinite"
+reverse="yes"
 />
 </path>
 <circle r="170" cx="360" cy="360"
