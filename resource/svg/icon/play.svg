@@ -73,6 +73,16 @@ values="
 dur="2s"
 repeatCount="indefinite"
 />
+<animateTransform
+attributeName="transform"
+attributeType="XML"
+type="rotate"
+values="
+-5 500 360;-3 500 360;0 500 360;3 500 360;5 500 360;3 500 360;0 500 360;-3 500 360;-5 500 360
+"
+dur="2s"
+repeatCount="indefinite"
+/>
 </path>
 <circle r="170" cx="360" cy="360"
 class="sicalyme_color_brown"
