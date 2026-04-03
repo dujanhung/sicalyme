@@ -1,6 +1,6 @@
 <h1>🪾 navigation</h1>
 
-<img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/icon/play.svg">
+<img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/template/eye.svg">
 
 <table><tr><td>
 
