@@ -68,11 +68,16 @@ attributeName="transform"
 attributeType="XML"
 type="rotate"
 values="
--10 360 360;10 360 360;110 360 360;130 360 360;230 360 360;250 360 360;350 360 360
+10 360 360
+;-10 360 360
+;130 360 360
+;110 360 360
+;250 360 360
+;230 360 360
+;370 360 360
 "
 dur="3s"
 repeatCount="indefinite"
-reverse="yes"
 />
 </path>
 <circle r="170" cx="360" cy="360"
