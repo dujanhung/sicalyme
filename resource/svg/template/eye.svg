@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
-
 <style>
 .sicalyme_color_olive
 {
@@ -44,7 +42,6 @@ stroke:
 #505050
 }
 </style>
-
 <circle r="170" cx="360" cy="360"
 class="sicalyme_color_brown"
 />
@@ -67,5 +64,4 @@ dur="4s"
 repeatCount="indefinite"
 />
 </path>
-
 </svg>
