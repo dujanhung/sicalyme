@@ -68,26 +68,6 @@ attributeName="transform"
 attributeType="XML"
 type="rotate"
 values="
--5 360 360;-3 360 360;0 360 360;3 360 360;5 360 360;3 360 360;0 360 360;-3 360 360;-5 360 360
-"
-dur="2s"
-repeatCount="indefinite"
-/>
-<animateTransform
-attributeName="transform"
-attributeType="XML"
-type="rotate"
-values="
-5 500 360;3 500 360;0 500 360;-3 500 360;-5 500 360;-3 500 360;0 500 360;3 500 360;5 500 360
-"
-dur="2s"
-repeatCount="indefinite"
-/>
-<animateTransform
-attributeName="transform"
-attributeType="XML"
-type="rotate"
-values="
 -10 360 360;10 360 360;110 360 360;130 360 360;230 360 360;250 360 360;350 360 360
 "
 dur="3s"
