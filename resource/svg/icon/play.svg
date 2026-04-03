@@ -68,9 +68,9 @@ attributeName="transform"
 attributeType="XML"
 type="rotate"
 values="
-5 360 360;-5 360 360;125 360 360;115 360 360;245 360 360;235 360 360;365 360 360
+3 360 360;-3 360 360;123 360 360;117 360 360;243 360 360;237 360 360;363 360 360
 "
-dur="2s"
+dur="3s"
 repeatCount="indefinite"
 />
 </path>
