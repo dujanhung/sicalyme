@@ -62,7 +62,18 @@ repeatCount="indefinite"
 M680 360 700 310 650 330V210H600V510H650V390L700 410Z
 "
 class="sicalyme_color_grey"
+>
+<animateTransform
+attributeName="transform"
+attributeType="XML"
+type="rotate"
+values="
+-5 360 360;-3 360 360;0 360 360;3 360 360;5 360 360;3 360 360;0 360 360;-3 360 360;-5 360 360
+"
+dur="2s"
+repeatCount="indefinite"
 />
+</path>
 <circle r="170" cx="360" cy="360"
 class="sicalyme_color_brown"
 />
