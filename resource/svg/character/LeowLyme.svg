@@ -14,7 +14,7 @@ https://en.softonic.com/download/paintersvg/android/post-download?dt=internalDow
 
 note:
  some attributes are required for PainterSVG compatibility.
- this issue would be resolved after a SVG formatter exists.
+ it would be resolved after a SVG formatter exists.
  example:
   style
   psvg:layer
