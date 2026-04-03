@@ -1,5 +1,7 @@
 <h1>🪾 navigation</h1>
 
+<img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/icon/play.svg">
+
 <table><tr><td>
 
 <h2>🤔 about</h2>
