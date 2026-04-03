@@ -55,7 +55,9 @@ class="sicalyme_color_olive"
 attributeName="transform"
 attributeType="XML"
 type="rotate"
-values="-5 360 360;-3 360 360;0 360 360;3 360 360;5 360 360;3 360 360;0 360 360;-3 360 360;-5 360 360"
+values="
+-5 360 360;-3 360 360;0 360 360;3 360 360;5 360 360;3 360 360;0 360 360;-3 360 360;-5 360 360
+"
 dur="2s"
 repeatCount="indefinite"
 />
