@@ -1,6 +1,6 @@
 <h1>📥 install sicalyme</h1>
 
-<img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/icon/setting.svg">
+<img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/icon/play.svg">
 
 <table><tr><td>
 
