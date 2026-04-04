@@ -76,9 +76,9 @@ repeatCount="indefinite"
 <animateTransform
 attributeName="transform"
 attributeType="XML"
-type="class"
+type="fill"
 values="
-sicalyme_color_grey;sicalyme_color_white;sicalyme_color_grey;sicalyme_color_black;sicalyme_color_grey
+#b0b0b0;#d0d0d0;#b0b0b0;#707070;#b0b0b0
 "
 dur="2s"
 repeatCount="indefinite"
