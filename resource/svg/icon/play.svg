@@ -76,7 +76,7 @@ repeatCount="indefinite"
 <animateTransform
 attributeName="transform"
 attributeType="XML"
-type="style"
+type="class"
 values="
 sicalyme_color_grey;sicalyme_color_white;sicalyme_color_grey;sicalyme_color_black;sicalyme_color_grey
 "
