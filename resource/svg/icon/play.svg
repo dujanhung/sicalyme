@@ -68,7 +68,7 @@ attributeName="transform"
 attributeType="XML"
 type="rotate"
 values="
-3 360 360;-3 360 360;123 360 360;117 360 360;243 360 360;237 360 360;363 360 360
+5 360 360;3 360 360;0 360 360;-3 360 360;-5 360 360;-3 360 360;0 360 360;3 360 360;5 360 360
 "
 dur="3s"
 repeatCount="indefinite"
