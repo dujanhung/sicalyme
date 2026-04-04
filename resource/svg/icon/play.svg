@@ -73,6 +73,16 @@ values="
 dur="2s"
 repeatCount="indefinite"
 />
+<animateTransform
+attributeName="transform"
+attributeType="XML"
+type="style"
+values="
+sicalyme_color_grey;sicalyme_color_white;sicalyme_color_grey;sicalyme_color_black;sicalyme_color_grey
+"
+dur="2s"
+repeatCount="indefinite"
+/>
 </path>
 <circle r="170" cx="360" cy="360"
 class="sicalyme_color_brown"
