@@ -86,7 +86,7 @@ attributeName="stroke"
 values="
 #909090;#aaa;#909090;#505050;#909090
 "
-dur="2s"
+dur="1s"
 repeatCount="indefinite"
 />
 </path>
