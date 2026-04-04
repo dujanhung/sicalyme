@@ -73,22 +73,6 @@ values="
 dur="2s"
 repeatCount="indefinite"
 />
-<animate
-attributeName="fill"
-values="
-#b0b0b0;#d0d0d0;#b0b0b0;#707070;#b0b0b0
-"
-dur="1s"
-repeatCount="indefinite"
-/>
-<animate
-attributeName="stroke"
-values="
-#909090;#aaa;#909090;#505050;#909090
-"
-dur="1s"
-repeatCount="indefinite"
-/>
 </path>
 <circle r="170" cx="360" cy="360"
 class="sicalyme_color_brown"
