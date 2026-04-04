@@ -78,7 +78,7 @@ attributeName="fill"
 values="
 #b0b0b0;#d0d0d0;#b0b0b0;#707070;#b0b0b0
 "
-dur="2s"
+dur="1s"
 repeatCount="indefinite"
 />
 <animate
