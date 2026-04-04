@@ -73,10 +73,8 @@ values="
 dur="2s"
 repeatCount="indefinite"
 />
-<animateTransform
-attributeName="transform"
-attributeType="XML"
-type="fill"
+<animate
+attributeName="fill"
 values="
 #b0b0b0;#d0d0d0;#b0b0b0;#707070;#b0b0b0
 "
