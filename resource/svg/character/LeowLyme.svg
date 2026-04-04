@@ -13,11 +13,11 @@ PainterSVG v3.92
 https://en.softonic.com/download/paintersvg/android/post-download?dt=internalDownload
 
 note:
- some attributes are required for PainterSVG compatibility.
- it would be resolved after a SVG formatter exists.
- example:
-  style
-  psvg:layer
+°some attributes are required for PainterSVG compatibility.
+°it would be resolved after a SVG formatter exists.
+°example:
+°°style
+°°psvg:layer
 
 -->
 
