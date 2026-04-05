@@ -80,7 +80,7 @@ animate:"fill 2s indefinite"
 @keyframes
 {
 values:
-#aaa,#000,#aaa
+#fff,#000,#fff
 }
 }
 ```
