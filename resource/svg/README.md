@@ -66,3 +66,13 @@ stroke:
 #bbb
 }
 ```
+
+animate CSS with `<style>`
+
+```css
+.new_css_class_animation
+{
+animate:
+fill 2s indefinite
+}
+```
