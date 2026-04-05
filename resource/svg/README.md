@@ -75,7 +75,7 @@ animate CSS with `<style>`
 animate:"fill 2s indefinite"
 @keyframes
 {
-values:
+values{
 #aaa,#000,#aaa
 }
 }
