@@ -9,7 +9,7 @@ all SVG files in icon folder should have this:
 
 don't use `viewBox` .
 
-don't use `style` . use `class` and `<style>` instead.
+don't use `style` , because it's hard to maintain. use `class` and `<style>` instead
 
 don't use `<script>` , `<defs>` , `<use>` , because GitHub would reject it.
 
