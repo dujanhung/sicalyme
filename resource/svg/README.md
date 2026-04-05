@@ -73,7 +73,7 @@ animate CSS with `<style>`
 .new_css_class_animation
 {
 animate:
-fill 2s indefinite
+fill,2s,indefinite
 @keyframes
 {
 values:
