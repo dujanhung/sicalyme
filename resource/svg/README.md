@@ -35,7 +35,7 @@ repeatCount="indefinite"
 >
 ```
 
-animate SVG without CSS
+animate CSS without CSS
 
 ```xml
 <animate
