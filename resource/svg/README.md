@@ -7,9 +7,9 @@ all SVG files in icon folder should have this:
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
 ```
 
-in `<svg>` ,don't use `viewBox` , unless it's different from `width` and `height`
+in `<svg>` ,don't use `viewBox` , unless it's different from `width` and `height` .
 
-don't use `style` , because it's hard to maintain. use `class` and `<style>` instead
+don't use `style` , because it's hard to maintain. use `class` and `<style>` instead.
 
 don't use `<script>` , `<defs>` , `<use>` , because GitHub would reject it.
 
