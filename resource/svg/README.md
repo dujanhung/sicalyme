@@ -11,6 +11,8 @@ don't use `viewBox` .
 
 don't use `style` . use `class` and `<style>` instead.
 
+don't use `<script>` , `<defs>` , `<use>` , because GitHub would reject it.
+
 SVG must follow this structure:
 ```xml
 <path d="
