@@ -22,6 +22,8 @@ class="new_css_class"
 >
 ```
 
+animate `transform` without `<style>`
+
 ```xml
 <animateTransform
 AttributeName="transform"
