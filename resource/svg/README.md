@@ -7,6 +7,8 @@ all SVG files in icon folder should have this:
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
 ```
 
+don't use `style` .
+
 SVG must follow this structure:
 ```xml
 <path d="
