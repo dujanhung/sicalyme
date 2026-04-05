@@ -13,7 +13,7 @@ don't use `style` , because it's hard to maintain. use `class` and `<style>` ins
 
 don't use `<script>` , `<defs>` , `<use>` , because GitHub would reject it.
 
-SVG must follow this structure:
+some SVG tags must follow this structure:
 ```xml
 <path d="
 M...Z
