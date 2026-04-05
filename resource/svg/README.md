@@ -51,6 +51,10 @@ repeatCount="indefinite"
 ```
 
 
+<h2>
+CSS
+</h2>
+
 you can get some ready-made CSS classes at
 <a href="https://github.com/dujanhung/sicalyme/blob/main/resource/css_svg/sicalyme_color.css">here</a>
 
