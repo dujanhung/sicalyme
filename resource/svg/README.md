@@ -2,7 +2,7 @@ in this folder,
 those SVG files are copyrighted.
 (except for icon and template).
 
-you can get some CSS classes at
+you can get some ready-made CSS classes at
 <a href="https://github.com/dujanhung/sicalyme/blob/main/resource/css_svg/sicalyme_color.css">here</a>
 
 CSS must follow this structure:
