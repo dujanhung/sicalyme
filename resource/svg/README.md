@@ -11,7 +11,7 @@ in `<svg>` , don't use `viewBox` , unless it's different from `width` and `heigh
 
 don't use `style` , because it's hard to maintain. use `class` and `<style>` instead.
 
-don't use `<script>` , `<defs>` , `<use>` , GitHub would reject it for security reasons, such as: memory overwhelm, malicious script, etc.
+don't use `<script>` , `<defs>` , `<use>` , GitHub would reject it for security reasons, such as: memory overwhelm, unwanted hijacking, etc.
 
 some SVG tags must follow this structure:
 ```xml
