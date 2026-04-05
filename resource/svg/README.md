@@ -14,7 +14,8 @@ class="new_css_class"
 ```xml
 <animateTransform
 AttributeName="transform"
-AttributeType="rotate"
+AttributeType="XML"
+type="rotate"
 values="
 0;180;0
 "
