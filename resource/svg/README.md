@@ -35,7 +35,7 @@ repeatCount="indefinite"
 >
 ```
 
-animate CSS without CSS
+animate CSS without `<style>`
 
 ```xml
 <animate
