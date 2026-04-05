@@ -74,7 +74,7 @@ stroke:
 animate CSS with `<style>`
 
 ```css
-.new_svg_animation
+.change_color
 {
 animate:"fill 2s indefinite"
 @keyframes
