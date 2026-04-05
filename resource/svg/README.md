@@ -77,7 +77,7 @@ fill 2s indefinite
 @keyframes
 {
 values:
-#aaa;#000;#aaa
+#aaa,#000,#aaa
 }
 }
 ```
