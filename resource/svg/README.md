@@ -35,6 +35,18 @@ repeatCount="indefinite"
 >
 ```
 
+```xml
+<animate
+AttributeName="fill"
+values="
+#aaa,#000,#aaa
+"
+dur="2s"
+repeatCount="indefinite"
+>
+```
+
+
 you can get some ready-made CSS classes at
 <a href="https://github.com/dujanhung/sicalyme/blob/main/resource/css_svg/sicalyme_color.css">here</a>
 
