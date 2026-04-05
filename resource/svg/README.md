@@ -35,6 +35,8 @@ repeatCount="indefinite"
 >
 ```
 
+animate SVG without CSS
+
 ```xml
 <animate
 AttributeName="fill"
