@@ -43,7 +43,7 @@ animate CSS without `<style>`
 <animate
 AttributeName="fill"
 values="
-#aaa,#000,#aaa
+#aaa;#000;#aaa
 "
 dur="2s"
 repeatCount="indefinite"
