@@ -11,6 +11,18 @@ class="new_css_class"
 >
 ```
 
+```xml
+<animateTransform
+AttributeName="transform"
+AttributeType="rotate"
+values="
+0;180;0
+"
+dur="2s"
+repeatCount="indefinite"
+>
+```
+
 you can get some ready-made CSS classes at
 <a href="https://github.com/dujanhung/sicalyme/blob/main/resource/css_svg/sicalyme_color.css">here</a>
 
