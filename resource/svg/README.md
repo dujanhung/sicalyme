@@ -8,6 +8,7 @@ SVG must follow this structure:
 M...Z
 "
 class="new_css_class"
+>
 ```
 
 you can get some ready-made CSS classes at
