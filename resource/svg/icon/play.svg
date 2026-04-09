@@ -107,6 +107,10 @@ M360 440l26 8 62-62-8-26v0h-40l-1 5-34 34-5 1
 stroke-width="9.9"
 style="sicalyme_color_ghost_white"
 />
-<path d="M360 400v40m80-80h-40" stroke="#505050"/>
+<path d="
+M360 400v40m80-80h-40
+"
+style="sicalyme_color_black"
+/>
 </g>
 </svg>
