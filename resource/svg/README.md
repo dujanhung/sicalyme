@@ -3,9 +3,10 @@ those SVG files are copyrighted.
 (except for icon and template).
 
 all SVG files in icon folder should have this:
-\`\`\`xml
-\<svg xmlns\=\"http:\/\/www\.w3\.org\/2000\/svg\" width\=\"720\" height\=\"720\" stroke\-width\=\"10\" stroke\-linecap\=\"round\" stroke\-linejoin\=\"round\"\/>
-\`\`\`
+
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+```
 
 in `<svg>` , don't use `viewBox` , unless it's different from `width` and `height` .
 
