@@ -67,17 +67,7 @@ dur="2s"
 repeatCount="indefinite"
 />
 </path>
-<circle r="170" cx="360" cy="360"
-class="sicalyme_color_brown"
-/>
-<circle r="110" cx="360" cy="360"
-class="sicalyme_color_white"
-/>
-<path d="
-M360 400C338 400 320 382 320 360 320 338 338 320 360 320 382 320 400 338 400 360H440C440 316 404 280 360 280 316 280 280 316 280 360 280 404 316 440 360 440Z
-"
-class="sicalyme_color_black"
->
+<g>
 <animateTransform
 attributeName="transform"
 attributeType="XML"
@@ -88,5 +78,22 @@ values="
 dur="4s"
 repeatCount="indefinite"
 />
-</path>
+<circle r="80" cx="360" cy="360"
+class="sicalyme_color_black"
+/>
+<circle r="40" cx="360" cy="360"
+style="sicalyme_color_outline_black"
+/>
+<path d="
+M360 440l26 8 62-62-8-26v0h-40l-1 5-34 34-5 1
+"
+stroke-width="9.9"
+style="sicalyme_color_ghost_white"
+/>
+<path d="
+M360 400v40m80-80h-40
+"
+style="sicalyme_color_black"
+/>
+</g>
 </svg>
