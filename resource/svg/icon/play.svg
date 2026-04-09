@@ -107,7 +107,9 @@ values="
 dur="4s"
 repeatCount="indefinite"
 />
-<circle r="80" cx="360" cy="360" class="sicalyme_color_black"/>
+<circle r="80" cx="360" cy="360"
+class="sicalyme_color_black"
+/>
 <circle r="40" cx="360" cy="360"
 style="sicalyme_color_outline_black"
 />
