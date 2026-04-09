@@ -54,8 +54,8 @@ stroke:
 fill:
 #505050
 ,
-stroke:
-none
+stroke-width:
+0
 }
 </style>
 <g transform="rotate(0 360 360)">
