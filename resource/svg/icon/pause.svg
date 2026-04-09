@@ -119,10 +119,33 @@ stroke:
 <path d="M470 155h70v35h-70Z" fill="#505050"/>
 </g>
 </g>
-<circle r="170" cx="360" cy="360" class="sicalyme_color_brown"/>
-<circle r="110" cx="360" cy="360" class="sicalyme_color_white"/>
-<circle r="80" cx="360" cy="360" class="sicalyme_color_black"/>
-<circle r="40" cx="360" cy="360" stroke="#505050" fill="#d0d0d0"/>
-<path d="M360 440l26 8 62-62-8-26v0h-40l-1 5-34 34-5 1" fill="#d0d0d0" stroke="#d0d0d0" stroke-width="9.9"/>
-<path d="M360 400v40m80-80h-40" stroke="#505050"/>
+<g>
+<animateTransform
+attributeName="transform"
+attributeType="XML"
+type="rotate"
+values="
+-10 360 360;10 360 360;80 360 360;100 360 360;170 360 360;190 360 360;260 360 360;280 360 360;350 360 360
+"
+dur="4s"
+repeatCount="indefinite"
+/>
+<circle r="80" cx="360" cy="360"
+class="sicalyme_color_black"
+/>
+<circle r="40" cx="360" cy="360"
+style="sicalyme_color_outline_black"
+/>
+<path d="
+M360 440l26 8 62-62-8-26v0h-40l-1 5-34 34-5 1
+"
+stroke-width="9.9"
+style="sicalyme_color_ghost_white"
+/>
+<path d="
+M360 400v40m80-80h-40
+"
+style="sicalyme_color_black"
+/>
+</g>
 </svg>
