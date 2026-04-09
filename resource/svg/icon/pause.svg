@@ -49,25 +49,6 @@ fill:
 stroke:
 #505050
 }
-.sicalyme_color_outline_black
-{
-fill:
-#d0d0d0
-;
-stroke:
-#505050
-}
-.sicalyme_color_ghost_white
-{
-fill:
-#d0d0d0
-,
-stroke:
-#d0d0d0
-,
-stroke-width:
-9.9
-}
 </style>
 <g transform="rotate(0 360 360)">
 <animateTransform
@@ -173,7 +154,17 @@ repeatCount="indefinite"
 <path d="M470 155h70v35h-70Z" fill="#505050"/>
 </g>
 </g>
-<g>
+<circle r="170" cx="360" cy="360"
+class="sicalyme_color_brown"
+/>
+<circle r="110" cx="360" cy="360"
+class="sicalyme_color_white"
+/>
+<path d="
+M360 400c-22 0-40-18-40-40 0-22 18-40 40-40 22 0 40 18 40 40h40c0-44-36-80-80-80-44 0-80 36-80 80 0 44 36 80 80 80Z
+"
+class="sicalyme_color_black"
+>
 <animateTransform
 attributeName="transform"
 attributeType="XML"
@@ -184,27 +175,5 @@ values="
 dur="4s"
 repeatCount="indefinite"
 />
-<circle r="170" cx="360" cy="360"
-class="sicalyme_color_brown"
-/>
-<circle r="110" cx="360" cy="360"
-class="sicalyme_color_white"
-/>
-<circle r="80" cx="360" cy="360"
-class="sicalyme_color_black"
-/>
-<circle r="40" cx="360" cy="360"
-class="sicalyme_color_outline_black"
-/>
-<path d="
-M360 440l26 8 62-62-8-26v0h-40l-1 5-34 34-5 1
-"
-class="sicalyme_color_ghost_white"
-/>
-<path d="
-M360 400v40m80-80h-40
-"
-class="sicalyme_color_black"
-/>
-</g>
+</path>
 </svg>
