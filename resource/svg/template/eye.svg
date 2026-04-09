@@ -25,6 +25,22 @@ fill:
 stroke:
 #505050
 }
+.sicalyme_color_outline_black
+{
+fill:
+#d0d0d0
+;
+stroke:
+#505050
+}
+.sicalyme_color_ghost_white
+{
+fill:
+#d0d0d0
+,
+stroke:
+#d0d0d0
+}
 </style>
 <!--
 insert new shapes here
