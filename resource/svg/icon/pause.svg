@@ -1,0 +1,112 @@
+<svg width="720" height="720" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+<style>
+.sicalyme_color_olive
+{
+fill:
+#6d7500
+;
+stroke:
+#555a00
+}
+.sicalyme_color_brown
+{
+fill:
+#7f4a00
+;
+stroke:
+#5e3201
+}
+.sicalyme_color_white
+{
+fill:
+#d0d0d0
+;
+stroke:
+#aaa
+}
+.sicalyme_color_light_grey
+{
+fill:
+#d0d0d0
+;
+stroke:
+#b0b0b0
+}
+.sicalyme_color_grey
+{
+fill:
+#b0b0b0
+;
+stroke:
+#909090
+}
+.sicalyme_color_black
+{
+fill:
+#707070
+;
+stroke:
+#505050
+}
+</style>
+<g transform="rotate(0 360 360)">
+<g transform="rotate(0 560 270)">
+<g>
+<path d="M600 340v-190l-80-80h-70v-20h80l90 90v180Z" class="sicalyme_color_light_grey"/>
+<path d="M450 70h70l80 80v190l-10 10h-140Z" class="sicalyme_color_grey"/>
+<circle r="20" cx="490" cy="110" fill="#505050"/>
+<path d="M445 100h28v20h-28Z" fill="#505050"/>
+</g>
+</g>
+<g transform="rotate(0 560 450)">
+<g transform="translate(0 720) scale(1-1)">
+<path d="M600 340v-190l-80-80h-70v-20h80l90 90v180Z" class="sicalyme_color_light_grey"/>
+<path d="M450 70h70l80 80v190l-10 10h-140Z" class="sicalyme_color_grey"/>
+<circle r="20" cx="490" cy="110" fill="#505050"/>
+<path d="M445 100h28v20h-28Z" fill="#505050"/>
+</g>
+</g>
+<g transform="rotate(0 160 270)">
+<g transform="translate(720) scale(-1 1)">
+<path d="M600 340v-190l-80-80h-70v-20h80l90 90v180Z" class="sicalyme_color_light_grey"/>
+<path d="M450 70h70l80 80v190l-10 10h-140Z" class="sicalyme_color_grey"/>
+<circle r="20" cx="490" cy="110" fill="#505050"/>
+<path d="M445 100h28v20h-28Z" fill="#505050"/>
+</g>
+</g>
+<g transform="rotate(0 160 450)">
+<g transform="translate(720 720) scale(-1)">
+<path d="M600 340v-190l-80-80h-70v-20h80l90 90v180Z" class="sicalyme_color_light_grey"/>
+<path d="M450 70h70l80 80v190l-10 10h-140Z" class="sicalyme_color_grey"/>
+<circle r="20" cx="490" cy="110" fill="#505050"/>
+<path d="M445 100h28v20h-28Z" fill="#505050"/>
+</g>
+</g>
+<g>
+<path d="M560 360h-150v-160l40-40h110Z" class="sicalyme_color_olive"/>
+<path d="M560 260l20 10-10 20 10 20-20 10Z" fill="#505050"/>
+<path d="M470 155h70v35h-70Z" fill="#505050"/>
+</g>
+<g transform="translate(0 720) scale(1-1)">
+<path d="M560 360h-150v-160l40-40h110Z" class="sicalyme_color_olive"/>
+<path d="M560 260l20 10-10 20 10 20-20 10Z" fill="#505050"/>
+<path d="M470 155h70v35h-70Z" fill="#505050"/>
+</g>
+<g transform="translate(720) scale(-1 1)">
+<path d="M560 360h-150v-160l40-40h110Z" class="sicalyme_color_olive"/>
+<path d="M560 260l20 10-10 20 10 20-20 10Z" fill="#505050"/>
+<path d="M470 155h70v35h-70Z" fill="#505050"/>
+</g>
+<g transform="translate(720 720) scale(-1)">
+<path d="M560 360h-150v-160l40-40h110Z" class="sicalyme_color_olive"/>
+<path d="M560 260l20 10-10 20 10 20-20 10Z" fill="#505050"/>
+<path d="M470 155h70v35h-70Z" fill="#505050"/>
+</g>
+</g>
+<circle r="170" cx="360" cy="360" class="sicalyme_color_brown"/>
+<circle r="110" cx="360" cy="360" class="sicalyme_color_white"/>
+<circle r="80" cx="360" cy="360" class="sicalyme_color_black"/>
+<circle r="40" cx="360" cy="360" stroke="#505050" fill="#d0d0d0"/>
+<path d="M360 440l26 8 62-62-8-26v0h-40l-1 5-34 34-5 1" fill="#d0d0d0" stroke="#d0d0d0" stroke-width="9.9"/>
+<path d="M360 400v40m80-80h-40" stroke="#505050"/>
+</svg>
