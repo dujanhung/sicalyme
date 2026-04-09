@@ -49,6 +49,14 @@ fill:
 stroke:
 #505050
 }
+.sicalyme_color_tape
+{
+fill:
+#505050
+,
+stroke:
+none
+}
 </style>
 <g transform="rotate(0 360 360)">
 <animateTransform
@@ -73,10 +81,23 @@ dur="2s"
 repeatCount="indefinite"
 />
 <g>
-<path d="M600 340v-190l-80-80h-70v-20h80l90 90v180Z" class="sicalyme_color_light_grey"/>
-<path d="M450 70h70l80 80v190l-10 10h-140Z" class="sicalyme_color_grey"/>
-<circle r="20" cx="490" cy="110" fill="#505050"/>
-<path d="M445 100h28v20h-28Z" fill="#505050"/>
+<path d="
+M600 340v-190l-80-80h-70v-20h80l90 90v180Z
+"
+class="sicalyme_color_light_grey"
+/>
+<path d="
+M450 70h70l80 80v190l-10 10h-140Z
+"
+class="sicalyme_color_grey"/>
+<circle r="20" cx="490" cy="110"
+class="sicalyme_color_tape"
+/>
+<path d="
+M445 100h28v20h-28Z
+"
+class="sicalyme_color_tape"
+/>
 </g>
 </g>
 <g transform="rotate(0 560 450)">
@@ -91,10 +112,23 @@ dur="2s"
 repeatCount="indefinite"
 />
 <g transform="translate(0 720) scale(1-1)">
-<path d="M600 340v-190l-80-80h-70v-20h80l90 90v180Z" class="sicalyme_color_light_grey"/>
-<path d="M450 70h70l80 80v190l-10 10h-140Z" class="sicalyme_color_grey"/>
-<circle r="20" cx="490" cy="110" fill="#505050"/>
-<path d="M445 100h28v20h-28Z" fill="#505050"/>
+<path d="
+M600 340v-190l-80-80h-70v-20h80l90 90v180Z
+"
+class="sicalyme_color_light_grey"
+/>
+<path d="
+M450 70h70l80 80v190l-10 10h-140Z
+"
+class="sicalyme_color_grey"/>
+<circle r="20" cx="490" cy="110"
+class="sicalyme_color_tape"
+/>
+<path d="
+M445 100h28v20h-28Z
+"
+class="sicalyme_color_tape"
+/>
 </g>
 </g>
 <g transform="rotate(0 160 270)">
@@ -109,10 +143,23 @@ dur="2s"
 repeatCount="indefinite"
 />
 <g transform="translate(720) scale(-1 1)">
-<path d="M600 340v-190l-80-80h-70v-20h80l90 90v180Z" class="sicalyme_color_light_grey"/>
-<path d="M450 70h70l80 80v190l-10 10h-140Z" class="sicalyme_color_grey"/>
-<circle r="20" cx="490" cy="110" fill="#505050"/>
-<path d="M445 100h28v20h-28Z" fill="#505050"/>
+<path d="
+M600 340v-190l-80-80h-70v-20h80l90 90v180Z
+"
+class="sicalyme_color_light_grey"
+/>
+<path d="
+M450 70h70l80 80v190l-10 10h-140Z
+"
+class="sicalyme_color_grey"/>
+<circle r="20" cx="490" cy="110"
+class="sicalyme_color_tape"
+/>
+<path d="
+M445 100h28v20h-28Z
+"
+class="sicalyme_color_tape"
+/>
 </g>
 </g>
 <g transform="rotate(0 160 450)">
@@ -127,10 +174,23 @@ dur="2s"
 repeatCount="indefinite"
 />
 <g transform="translate(720 720) scale(-1)">
-<path d="M600 340v-190l-80-80h-70v-20h80l90 90v180Z" class="sicalyme_color_light_grey"/>
-<path d="M450 70h70l80 80v190l-10 10h-140Z" class="sicalyme_color_grey"/>
-<circle r="20" cx="490" cy="110" fill="#505050"/>
-<path d="M445 100h28v20h-28Z" fill="#505050"/>
+<path d="
+M600 340v-190l-80-80h-70v-20h80l90 90v180Z
+"
+class="sicalyme_color_light_grey"
+/>
+<path d="
+M450 70h70l80 80v190l-10 10h-140Z
+"
+class="sicalyme_color_grey"/>
+<circle r="20" cx="490" cy="110"
+class="sicalyme_color_tape"
+/>
+<path d="
+M445 100h28v20h-28Z
+"
+class="sicalyme_color_tape"
+/>
 </g>
 </g>
 <g>
