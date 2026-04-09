@@ -199,23 +199,67 @@ M410 360v-160l40-40h110v200
 "
 class="sicalyme_color_olive"
 />
-<path d="M560 260l20 10-10 20 10 20-20 10Z" fill="#505050"/>
-<path d="M470 155h70v35h-70Z" fill="#505050"/>
+<path d="
+M560 260l20 10-10 20 10 20-20 10Z
+"
+class="sicalyme_color_tape"
+/>
+<path d="
+M470 155h70v35h-70Z
+"
+class="sicalyme_color_tape"
+/>
 </g>
 <g transform="translate(0 720) scale(1-1)">
-<path d="M560 360h-150v-160l40-40h110Z" class="sicalyme_color_olive"/>
-<path d="M560 260l20 10-10 20 10 20-20 10Z" fill="#505050"/>
-<path d="M470 155h70v35h-70Z" fill="#505050"/>
+<path d="
+M410 360v-160l40-40h110v200
+"
+class="sicalyme_color_olive"
+/>
+<path d="
+M560 260l20 10-10 20 10 20-20 10Z
+"
+class="sicalyme_color_tape"
+/>
+<path d="
+M470 155h70v35h-70Z
+"
+class="sicalyme_color_tape"
+/>
 </g>
 <g transform="translate(720) scale(-1 1)">
-<path d="M560 360h-150v-160l40-40h110Z" class="sicalyme_color_olive"/>
-<path d="M560 260l20 10-10 20 10 20-20 10Z" fill="#505050"/>
-<path d="M470 155h70v35h-70Z" fill="#505050"/>
+<path d="
+M410 360v-160l40-40h110v200
+"
+class="sicalyme_color_olive"
+/>
+<path d="
+M560 260l20 10-10 20 10 20-20 10Z
+"
+class="sicalyme_color_tape"
+/>
+<path d="
+M470 155h70v35h-70Z
+"
+class="sicalyme_color_tape"
+/>
 </g>
 <g transform="translate(720 720) scale(-1)">
-<path d="M560 360h-150v-160l40-40h110Z" class="sicalyme_color_olive"/>
-<path d="M560 260l20 10-10 20 10 20-20 10Z" fill="#505050"/>
-<path d="M470 155h70v35h-70Z" fill="#505050"/>
+<path d="
+M410 360v-160l40-40h110v200
+"
+class="sicalyme_color_olive"
+/>
+<path d="
+M560 260l20 10-10 20 10 20-20 10Z
+"
+class="sicalyme_color_tape"
+/>
+<path d="
+M470 155h70v35h-70Z
+"
+class="sicalyme_color_tape"
+/>
 </g>
 </g>
 <circle r="170" cx="360" cy="360"
