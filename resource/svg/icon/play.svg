@@ -41,6 +41,14 @@ fill:
 stroke:
 #505050
 }
+.sicalyme_color_outline_black
+{
+fill:
+#d0d0d0
+;
+stroke:
+#505050
+}
 .sicalyme_color_ghost_white
 {
 fill:
@@ -100,7 +108,9 @@ dur="4s"
 repeatCount="indefinite"
 />
 <circle r="80" cx="360" cy="360" class="sicalyme_color_black"/>
-<circle r="40" cx="360" cy="360" stroke="#505050" fill="#d0d0d0"/>
+<circle r="40" cx="360" cy="360"
+style="sicalyme_color_outline_black"
+/>
 <path d="
 M360 440l26 8 62-62-8-26v0h-40l-1 5-34 34-5 1
 "
