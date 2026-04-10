@@ -28,7 +28,9 @@ fill:
 stroke:
 #aaa
 }
-.sicalyme_color_grey
+path.sicalyme_color_grey
+,
+circle.sicalyme_color_grey
 {
 fill:
 #b0b0b0
@@ -36,7 +38,9 @@ fill:
 stroke:
 #909090
 }
-.sicalyme_color_black
+path.sicalyme_color_black
+,
+circle.sicalyme_color_black
 {
 fill:
 #707070
@@ -44,7 +48,9 @@ fill:
 stroke:
 #505050
 }
-.sicalyme_color_sand
+path.sicalyme_color_sand
+,
+circle.sicalyme_color_sand
 {
 fill:
 #faffa5
