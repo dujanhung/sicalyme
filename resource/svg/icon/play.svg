@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
 <style>
-.sicalyme_color_olive{fill:#6d7500;stroke:#555a00}
-.sicalyme_color_brown{fill:#7f4a00;stroke:#5e3201}
-.sicalyme_color_white{fill:#d0d0d0;stroke:#aaa}
-.sicalyme_color_grey{fill:#b0b0b0;stroke:#909090}
-.sicalyme_color_black{fill:#707070;stroke:#505050}
+.sicalyme_color_olive
+{
+fill:
+#6d7500
+;
+stroke:
+#555a00
+}
+.sicalyme_color_brown
+{
+fill:
+#7f4a00
+;
+stroke:#5e3201
+}
+.sicalyme_color_white
+{
+fill:
+#d0d0d0
+;
+stroke:#aaa
+}
+.sicalyme_color_grey{
+fill:
+#b0b0b0
+;
+stroke:#909090
+}
+.sicalyme_color_black
+{
+fill:#707070
+;
+stroke:#505050
+}
 </style>
 <path d="
 M595.0446 122.727 594.9598 170.0471 570.0564 170.0471 570.0564 550.1 595.0527 550.1171 595.0538 596.8271 448.6873 681.4234 407.7493 657.6898 420.201 636.1229 91.0656 446.0964 78.5527 467.7354 38.1001 444.3812 38.0208 275.3261 79.0436 251.7394 91.4953 273.3065 420.6308 83.2801 408.1473 61.624 448.5989 38.2681 595.0446 122.7271Z
