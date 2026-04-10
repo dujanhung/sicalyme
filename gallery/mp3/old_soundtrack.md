@@ -1,3 +1,3 @@
 .
-<audio src="https://sicalyme.fandom.com/wiki/File:Lady_lily.mp3" controls autoplay/>
+<audio src="https://static.wikia.nocookie.net/sicalyme/images/0/05/Lady_lily.mp3/revision/latest?cb=20251224030721&format=original" controls autoplay/>
 .
