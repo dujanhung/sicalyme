@@ -1,3 +1,3 @@
 .
-<audio src="" controls autoplay/>
+<video src="" controls autoplay/>
 .
