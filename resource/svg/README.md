@@ -1,4 +1,4 @@
-in this folder,
+in this repo,
 those SVG files are copyrighted.
 (except for icon and template).
 
