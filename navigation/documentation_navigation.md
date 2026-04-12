@@ -1,6 +1,6 @@
 <h1>📖 documentation</h1>
 
-<img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/icon/setting.svg">
+<img src="https://github.com/dujanhung/sicalyme-svg-lib/blob/main/icon/setting.svg">
 
 <table><tr><td>
 
