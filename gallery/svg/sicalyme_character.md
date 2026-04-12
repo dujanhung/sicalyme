@@ -1,1 +1,0 @@
-<img src="https://github.com/dujanhung/sicalyme/blob/main/resource/svg/character/LeowLyme.svg">
