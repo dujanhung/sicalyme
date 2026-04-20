@@ -1,0 +1,112 @@
+name: Sync APK Release to itch.io
+
+on:
+ release:
+  types: [published]
+
+ reaction:
+  types: [created]
+
+jobs:
+ upload:
+
+  if: >
+   github.event_name == 'release' ||
+   (
+    github.event_name == 'reaction' &&
+    github.event.reaction.content == 'eyes' &&
+    github.event.repository.owner.login == github.event.sender.login &&
+    github.event.subject_type == 'release'
+   )
+
+  runs-on: ubuntu-latest
+
+  env:
+   USERNAME: YOUR_ITCH_USERNAME
+   GAMENAME: YOUR_GAME_SLUG
+   ITCH_PROJECT: ${{ env.USERNAME }}/${{ env.GAMENAME }}
+
+  steps:
+
+   - name: Detect Release ID + tag
+    id: release_info
+    run: |
+     if [ "${{ github.event_name }}" = "release" ]; then
+      echo "id=${{ github.event.release.id }}" >> $GITHUB_OUTPUT
+      echo "tag=${{ github.event.release.tag_name }}" >> $GITHUB_OUTPUT
+     else
+      echo "id=${{ github.event.subject_id }}" >> $GITHUB_OUTPUT
+      echo "tag=${{ github.event.release.tag_name || github.ref_name }}" >> $GITHUB_OUTPUT
+     fi
+
+   - name: Download APK files
+    uses: robinraju/release-downloader@v1
+    with:
+     releaseId: ${{ steps.release_info.outputs.id }}
+     fileName: "*.apk"
+     out-file-path: build
+
+   - name: Detect base channel
+    id: base_channel
+    run: |
+     TAG="${{ steps.release_info.outputs.tag }}"
+
+     if [[ "$TAG" == *nightly* ]]; then
+      CHANNEL="android-nightly"
+     elif [[ "$TAG" == *beta* ]]; then
+      CHANNEL="android-beta"
+     else
+      CHANNEL="android"
+     fi
+
+     echo "base=$CHANNEL" >> $GITHUB_OUTPUT
+
+   - name: Check if APK exists
+    id: check_apk
+    run: |
+     if ls build/*.apk 1> /dev/null 2>&1; then
+      echo "apk_found=true" >> $GITHUB_OUTPUT
+     else
+      echo "apk_found=false" >> $GITHUB_OUTPUT
+     fi
+
+   - name: Install butler
+    if: steps.check_apk.outputs.apk_found == 'true'
+    uses: remarkablegames/setup-butler@v2
+
+   - name: Upload each APK variant to itch.io
+    if: steps.check_apk.outputs.apk_found == 'true'
+    run: |
+
+     BASE="${{ steps.base_channel.outputs.base }}"
+     VERSION="${{ steps.release_info.outputs.tag }}"
+
+     for file in build/*.apk; do
+
+      NAME=$(basename "$file" .apk)
+
+      if [[ "$NAME" == *arm64* ]]; then
+       VARIANT="arm64"
+      elif [[ "$NAME" == *universal* ]]; then
+       VARIANT="universal"
+      elif [[ "$NAME" == *x86* ]]; then
+       VARIANT="x86"
+      else
+       VARIANT="default"
+      fi
+
+      CHANNEL="$BASE-$VARIANT"
+
+      echo "Uploading $file → $CHANNEL"
+
+      butler push "$file" $ITCH_PROJECT:$CHANNEL \
+       --userversion "$VERSION"
+
+     done
+
+    env:
+     BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+
+   - name: Skip message (no APK attached)
+    if: steps.check_apk.outputs.apk_found == 'false'
+    run: echo "No APK found in release assets. Skipping itch.io upload."
