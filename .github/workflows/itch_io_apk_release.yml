@@ -74,7 +74,7 @@ jobs:
     if: steps.check_apk.outputs.apk_found == 'true'
     uses: remarkablegames/setup-butler@v2
 
-   - name: Upload each APK variant to itch.io
+   - name: Upload each APK variant (overwrite existing)
     if: steps.check_apk.outputs.apk_found == 'true'
     run: |
 
@@ -92,12 +92,16 @@ jobs:
       elif [[ "$NAME" == *x86* ]]; then
        VARIANT="x86"
       else
-       VARIANT="default"
+       VARIANT=""
       fi
 
-      CHANNEL="$BASE-$VARIANT"
+      if [ -z "$VARIANT" ]; then
+       CHANNEL="$BASE"
+      else
+       CHANNEL="$BASE-$VARIANT"
+      fi
 
-      echo "Uploading $file → $CHANNEL"
+      echo "Overwriting itch.io channel: $CHANNEL"
 
       butler push "$file" $ITCH_PROJECT:$CHANNEL \
        --userversion "$VERSION"
