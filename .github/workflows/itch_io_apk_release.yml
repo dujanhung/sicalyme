@@ -22,8 +22,8 @@ jobs:
   runs-on: ubuntu-latest
 
   env:
-   USERNAME: dujanhung
-   GAMENAME: sicalyme
+   USERNAME: "dujanhung"
+   GAMENAME: "sicalyme"
    ITCH_PROJECT: ${{ env.USERNAME }}/${{ env.GAMENAME }}
 
   steps:
