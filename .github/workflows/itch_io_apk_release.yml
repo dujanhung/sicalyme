@@ -22,8 +22,8 @@ jobs:
   runs-on: ubuntu-latest
 
   env:
-   USERNAME: "dujanhung"
-   GAMENAME: "sicalyme"
+   USERNAME: YOUR_ITCH_USERNAME
+   GAMENAME: YOUR_GAME_SLUG
    ITCH_PROJECT: ${{ env.USERNAME }}/${{ env.GAMENAME }}
 
   steps:
@@ -46,20 +46,18 @@ jobs:
      fileName: "*.apk"
      out-file-path: build
 
-   - name: Detect base channel
-    id: base_channel
+   - name: Detect release stage
+    id: stage
     run: |
      TAG="${{ steps.release_info.outputs.tag }}"
 
      if [[ "$TAG" == *nightly* ]]; then
-      CHANNEL="android-nightly"
+      echo "stage=nightly" >> $GITHUB_OUTPUT
      elif [[ "$TAG" == *beta* ]]; then
-      CHANNEL="android-beta"
+      echo "stage=beta" >> $GITHUB_OUTPUT
      else
-      CHANNEL="android"
+      echo "stage=stable" >> $GITHUB_OUTPUT
      fi
-
-     echo "base=$CHANNEL" >> $GITHUB_OUTPUT
 
    - name: Check if APK exists
     id: check_apk
@@ -74,12 +72,12 @@ jobs:
     if: steps.check_apk.outputs.apk_found == 'true'
     uses: remarkablegames/setup-butler@v2
 
-   - name: Upload each APK variant (overwrite existing)
+   - name: Upload with promotion logic
     if: steps.check_apk.outputs.apk_found == 'true'
     run: |
 
-     BASE="${{ steps.base_channel.outputs.base }}"
      VERSION="${{ steps.release_info.outputs.tag }}"
+     STAGE="${{ steps.stage.outputs.stage }}"
 
      for file in build/*.apk; do
 
@@ -95,16 +93,33 @@ jobs:
        VARIANT=""
       fi
 
-      if [ -z "$VARIANT" ]; then
-       CHANNEL="$BASE"
+      upload_channel () {
+
+       BASE="$1"
+
+       if [ -z "$VARIANT" ]; then
+        CHANNEL="$BASE"
+       else
+        CHANNEL="$BASE-$VARIANT"
+       fi
+
+       echo "Uploading → $CHANNEL"
+
+       butler push "$file" $ITCH_PROJECT:$CHANNEL \
+        --userversion "$VERSION"
+      }
+
+      if [ "$STAGE" = "nightly" ]; then
+       upload_channel android-nightly
+
+      elif [ "$STAGE" = "beta" ]; then
+       upload_channel android-beta
+
       else
-       CHANNEL="$BASE-$VARIANT"
+       upload_channel android
+       upload_channel android-beta
+       upload_channel android-nightly
       fi
-
-      echo "Overwriting itch.io channel: $CHANNEL"
-
-      butler push "$file" $ITCH_PROJECT:$CHANNEL \
-       --userversion "$VERSION"
 
      done
 
