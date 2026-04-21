@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 set -e
 
 STATE_FILE="$STATE_DIR/state.json"
