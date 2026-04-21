@@ -48,7 +48,6 @@ curl -L \
   -H "Authorization: Bearer $GH_TOKEN" \
   "$url" \
   -o build/$(basename "$url")
-done
 if ! ls build/*.apk 1> /dev/null 2>&1; then
  echo "No APK files found"
  exit 0
