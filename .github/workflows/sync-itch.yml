@@ -30,8 +30,7 @@ jobs:
   steps:
    - uses: actions/checkout@v4
    - name: Make scripts executable
-     run: |
-      chmod +x .github/scripts/*.sh
+     run: chmod +x .github/scripts/*.sh
  preflight:
   needs: setup
   runs-on: ubuntu-latest
