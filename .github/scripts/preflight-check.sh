@@ -87,13 +87,21 @@ check_release_apk_assets(){
   exit 0
  fi
 }
-check_itch_project_access(){
+check_itch_project_access () {
  USERNAME=$(cat .github/config/itch-username.txt | tr -d '\n')
  GAMENAME=$(cat .github/config/itch-gamename.txt | tr -d '\n')
- RESPONSE=$(curl -s -H \
-  "Authorization: Bearer $BUTLER_API_KEY" \
-  https://itch.io/api/1/$USERNAME/$GAMENAME \
- )
+ CACHE_FILE="$CACHE_DIR/project.json"
+ if [ -f "$CACHE_FILE" ]; then
+  echo "itch.io project cache hit ✔"
+  RESPONSE=$(cat "$CACHE_FILE")
+ else
+  echo "Fetching itch.io project info..."
+  RESPONSE=$(curl -s -H \
+   "Authorization: Bearer $BUTLER_API_KEY" \
+   https://itch.io/api/1/$USERNAME/$GAMENAME \
+  )
+  echo "$RESPONSE" > "$CACHE_FILE"
+ fi
  if echo "$RESPONSE" | grep -q '"errors"'; then
   print_error "itch.io project not accessible:
 $USERNAME/$GAMENAME"
