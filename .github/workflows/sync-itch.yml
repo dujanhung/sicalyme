@@ -16,16 +16,16 @@ jobs:
    runs-on: ubuntu-latest
    steps:
     - name: cache butler binary
-     uses: actions/cache@v4
-     with:
-      path: ~/.butler/bin
-      key: butler-${{ runner.os }}
+      uses: actions/cache@v4
+      with:
+       path: ~/.butler/bin
+       key: butler-${{ runner.os }}
  install-jq:
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v4
    - name: install jq
-    run: sudo apt-get update && sudo apt-get install -y jq
+     run: sudo apt-get update && sudo apt-get install -y jq
  setup:
   needs: install-jq
   runs-on: ubuntu-latest
@@ -34,16 +34,16 @@ jobs:
   steps:
    - uses: actions/checkout@v4
    - name: Make scripts executable
-    run: chmod +x .github/scripts/*.sh
+     run: chmod +x .github/scripts/*.sh
  preflight:
   needs: setup
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v4
    - name: Run preflight validation
-    run: .github/scripts/preflight-check.sh
-     env:
-      BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+     run: .github/scripts/preflight-check.sh
+      env:
+       BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
  preflight-failure-report:
   needs: preflight
   if: failure()
@@ -51,27 +51,27 @@ jobs:
   steps:
    - uses: actions/checkout@v4
    - name: Report preflight error to dashboard
-    run: .github/scripts/report-preflight-error.sh
+     run: .github/scripts/report-preflight-error.sh
  resolve-release-version:
   needs: preflight
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v4
    - name: Resolve release version
-    run: .github/scripts/resolve-release-version.sh
+     run: .github/scripts/resolve-release-version.sh
  sync-apk:
   needs: resolve-release-version
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v4
    - name: Upload APK to itch.io
-    run: .github/scripts/sync-itch-apk.sh
-     env:
-      BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+     run: .github/scripts/sync-itch-apk.sh
+      env:
+       BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
  update-dashboard:
   needs: sync-apk
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v4
    - name: Update Release dashboard
-    run: .github/scripts/update-release-dashboard.sh
+     run: .github/scripts/update-release-dashboard.sh
