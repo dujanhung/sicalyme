@@ -9,8 +9,11 @@ print_error(){
  echo "Required setup:"
  echo "  .github/config/itch-username.txt"
  echo "  .github/config/itch-gamename.txt"
- echo "  Repository secret: BUTLER_API_KEY"
- echo "  Release must contain at least one .apk asset"
+ echo "  .github/config/butler-link.txt"
+ echo ""
+ echo "Repository secret: BUTLER_API_KEY"
+ echo ""
+ echo "Release must contain at least one .apk asset"
  echo ""
  exit 1
 }
