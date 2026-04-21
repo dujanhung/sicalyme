@@ -28,16 +28,34 @@ if [ "$ACTION" = "deleted" ]; then
  exit 0
 fi
 install_butler(){
- BUTLER_URL=$(cat .github/config/butler-url.txt | tr -d '\n')
- if [ -z "$BUTLER_URL" ]; then
-  echo "ERROR: Butler URL config is empty"
-  exit 1
+ CACHE_DIR="$HOME/.butler/bin"
+ BUTLER_BIN="$CACHE_DIR/butler"
+ VERSION_FILE="$CACHE_DIR/version.txt"
+ mkdir -p "$CACHE_DIR"
+ echo "Checking latest Butler version..."
+ LATEST_VERSION=$(curl -s \
+  https://api.github.com/repos/itchio/butler/releases/latest \
+  | grep '"tag_name":' \
+  | head -1 \
+  | cut -d '"' -f4)
+ if [ -f "$VERSION_FILE" ]; then
+  INSTALLED_VERSION=$(cat "$VERSION_FILE")
+ else
+  INSTALLED_VERSION=""
  fi
- echo "Downloading Butler from: $BUTLER_URL"
+ if [ -f "$BUTLER_BIN" ] && [ "$INSTALLED_VERSION" = "$LATEST_VERSION" ]; then
+  echo "Butler up-to-date ($LATEST_VERSION) — using cache"
+  export PATH="$CACHE_DIR:$PATH"
+  return
+ fi
+ echo "Updating Butler: $INSTALLED_VERSION → $LATEST_VERSION"
+ BUTLER_URL=$(cat .github/config/butler-url.txt | tr -d '\n')
  curl -L "$BUTLER_URL" -o butler.zip
  unzip butler.zip
  chmod +x butler
- sudo mv butler /usr/local/bin/
+ mv butler "$BUTLER_BIN"
+ echo "$LATEST_VERSION" > "$VERSION_FILE"
+ export PATH="$CACHE_DIR:$PATH"
 }
 install_butler
 mkdir -p build
