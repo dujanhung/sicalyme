@@ -12,6 +12,11 @@ env:
  RELEASE_ID: ${{ github.event.release.id || github.event.issue.number }}
  ACTION: ${{ github.event.action }}
 jobs:
+ cache-butler:
+  uses: actions/cache@v4
+  with:
+   path: ~/.butler/bin
+   key: butler-${{ runner.os }}
  setup:
   runs-on: ubuntu-latest
   outputs:
