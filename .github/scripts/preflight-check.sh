@@ -57,6 +57,11 @@ check_butler_url(){
  echo "$URL_HASH" > "$CACHE_FILE"
  echo "Butler URL validated and cached ✔"
 }
+check_butler_api_key(){
+ if [ -z "$BUTLER_API_KEY" ]; then
+  print_error "Missing secret: BUTLER_API_KEY"
+ fi
+}
 check_itch_api_identity(){
  RESPONSE=$(curl -s \
   -H "Authorization: Bearer $BUTLER_API_KEY" \
@@ -98,9 +103,7 @@ echo "Running pre-flight validation..."
 check_release_apk_assets
 check_file .github/config/itch-username.txt
 check_file .github/config/itch-gamename.txt
-if [ -z "$BUTLER_API_KEY" ]; then
- print_error "Missing secret: BUTLER_API_KEY"
-fi
+check_butler_api_key
 check_butler_url
 check_itch_api_identity
 check_itch_project_access
