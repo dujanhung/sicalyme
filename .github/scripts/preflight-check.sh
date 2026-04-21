@@ -78,6 +78,8 @@ check_release_apk_assets(){
   | wc -l)
  if [ "$APK_COUNT" = "0" ]; then
   print_error "No APK assets attached to GitHub Release"
+  done
+  exit 0
  fi
 }
 check_itch_project_access(){
