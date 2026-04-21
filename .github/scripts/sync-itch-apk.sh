@@ -1,4 +1,3 @@
-set -e
 load_config(){
  FILE="$1"
  if [ ! -f "$FILE" ]; then
