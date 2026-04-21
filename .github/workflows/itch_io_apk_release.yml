@@ -24,7 +24,6 @@ jobs:
   env:
    USERNAME: "dujanhung"
    GAMENAME: "sicalyme"
-   ITCH_PROJECT: ${{ env.USERNAME }}/${{ env.GAMENAME }}
 
   steps:
 
@@ -105,7 +104,7 @@ jobs:
 
        echo "Uploading → $CHANNEL"
 
-       butler push "$file" $ITCH_PROJECT:$CHANNEL \
+       butler push "$file" $USERNAME/$GAMENAME:$CHANNEL \
         --userversion "$VERSION"
       }
 
