@@ -24,14 +24,14 @@ jobs:
   steps:
    - uses: actions/checkout@v4
    - name: Make scripts executable
-     run: chmod +x .github/scripts/*.sh
+    run: chmod +x .github/scripts/*.sh
  preflight:
   needs: setup
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v4
    - name: Run preflight validation
-     run: .github/scripts/preflight-check.sh
+    run: .github/scripts/preflight-check.sh
      env:
       BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
  sync-apk:
@@ -40,9 +40,9 @@ jobs:
   steps:
    - uses: actions/checkout@v4
    - name: Resolve release version
-     run: .github/scripts/resolve-release-version.sh
+    run: .github/scripts/resolve-release-version.sh
    - name: Upload APK to itch.io
-     run: .github/scripts/sync-itch-apk.sh
+    run: .github/scripts/sync-itch-apk.sh
      env:
       BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
  update-dashboard:
@@ -51,4 +51,4 @@ jobs:
   steps:
    - uses: actions/checkout@v4
    - name: Update Release dashboard
-     run: .github/scripts/update-release-dashboard.sh
+    run: .github/scripts/update-release-dashboard.sh
