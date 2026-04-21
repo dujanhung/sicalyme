@@ -29,7 +29,7 @@ if [ "$ACTION" = "deleted" ]; then
 fi
 install_butler(){
  curl -L \
-  https://broth.itch.ovh/butler/linux-amd64/LATEST/archive/default \
+  https://github.com/itchio/butler \
   -o butler.zip
  unzip butler.zip
  chmod +x butler
