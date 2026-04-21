@@ -38,14 +38,14 @@ jobs:
    - uses: actions/checkout@v4
 
 
+   - name: Make scripts executable
+     run: chmod +x .github/scripts/*.sh
+
+
    - name: Preflight validation
-
      run: .github/scripts/preflight-check.sh
-
-
      env:
-
-      BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }
+      BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
 
 
 
@@ -62,19 +62,18 @@ jobs:
    - uses: actions/checkout@v4
 
 
-   - name: Resolve release version
+   - name: Make scripts executable
+     run: chmod +x .github/scripts/*.sh
 
+
+   - name: Resolve release version
      run: .github/scripts/resolve-release-version.sh
 
 
    - name: Upload APK to itch.io
-
      run: .github/scripts/sync-itch-apk.sh
-
-
      env:
-
-      BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }
+      BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
 
 
 
@@ -91,6 +90,9 @@ jobs:
    - uses: actions/checkout@v4
 
 
-   - name: Update Release dashboard
+   - name: Make scripts executable
+     run: chmod +x .github/scripts/*.sh
 
+
+   - name: Update Release dashboard
      run: .github/scripts/update-release-dashboard.sh
