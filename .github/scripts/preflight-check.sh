@@ -103,8 +103,8 @@ echo "Running pre-flight validation..."
 check_release_apk_assets
 check_file .github/config/itch-username.txt
 check_file .github/config/itch-gamename.txt
-check_butler_api_key
 check_butler_url
+check_butler_api_key
 check_itch_api_identity
 check_itch_project_access
 echo "Pre-flight check passed ✔"
