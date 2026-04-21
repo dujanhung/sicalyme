@@ -40,7 +40,6 @@ for channel in $CHANNEL_LIST; do
 - $channel"
 done
 
-
 NEW_BODY="$BODY
 
 ---
