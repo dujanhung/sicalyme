@@ -22,21 +22,38 @@ jobs:
   runs-on: ubuntu-latest
 
   env:
-   USERNAME: "dujanhung"
-   GAMENAME: "sicalyme"
+   USERNAME: YOUR_ITCH_USERNAME
+   GAMENAME: YOUR_GAME_SLUG
 
   steps:
 
    - name: Detect Release ID + tag
     id: release_info
+    env:
+     GH_TOKEN: ${{ github.token }}
     run: |
+
      if [ "${{ github.event_name }}" = "release" ]; then
+
       echo "id=${{ github.event.release.id }}" >> $GITHUB_OUTPUT
       echo "tag=${{ github.event.release.tag_name }}" >> $GITHUB_OUTPUT
+
      else
-      echo "id=${{ github.event.subject_id }}" >> $GITHUB_OUTPUT
-      echo "tag=${{ github.event.release.tag_name || github.ref_name }}" >> $GITHUB_OUTPUT
+
+      RELEASE_ID="${{ github.event.subject_id }}"
+
+      TAG=$(curl -s \
+       -H "Authorization: Bearer $GH_TOKEN" \
+       -H "Accept: application/vnd.github+json" \
+       https://api.github.com/repos/${{ github.repository }}/releases/$RELEASE_ID \
+       | grep '"tag_name":' \
+       | cut -d '"' -f4)
+
+      echo "id=$RELEASE_ID" >> $GITHUB_OUTPUT
+      echo "tag=$TAG" >> $GITHUB_OUTPUT
+
      fi
+
 
    - name: Download APK files
     uses: robinraju/release-downloader@v1
@@ -45,9 +62,11 @@ jobs:
      fileName: "*.apk"
      out-file-path: build
 
+
    - name: Detect release stage
     id: stage
     run: |
+
      TAG="${{ steps.release_info.outputs.tag }}"
 
      if [[ "$TAG" == *nightly* ]]; then
@@ -58,21 +77,27 @@ jobs:
       echo "stage=stable" >> $GITHUB_OUTPUT
      fi
 
+
    - name: Check if APK exists
     id: check_apk
     run: |
+
      if ls build/*.apk 1> /dev/null 2>&1; then
       echo "apk_found=true" >> $GITHUB_OUTPUT
      else
       echo "apk_found=false" >> $GITHUB_OUTPUT
      fi
 
+
    - name: Install butler
     if: steps.check_apk.outputs.apk_found == 'true'
     uses: remarkablegames/setup-butler@v2
 
-   - name: Upload with promotion logic
+
+   - name: Upload APK variants with promotion logic
     if: steps.check_apk.outputs.apk_found == 'true'
+    env:
+     BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
     run: |
 
      VERSION="${{ steps.release_info.outputs.tag }}"
@@ -92,6 +117,7 @@ jobs:
        VARIANT=""
       fi
 
+
       upload_channel () {
 
        BASE="$1"
@@ -106,24 +132,28 @@ jobs:
 
        butler push "$file" $USERNAME/$GAMENAME:$CHANNEL \
         --userversion "$VERSION"
+
       }
 
+
       if [ "$STAGE" = "nightly" ]; then
+
        upload_channel android-nightly
 
       elif [ "$STAGE" = "beta" ]; then
+
        upload_channel android-beta
 
       else
+
        upload_channel android
        upload_channel android-beta
        upload_channel android-nightly
+
       fi
 
      done
 
-    env:
-     BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
 
    - name: Skip message (no APK attached)
     if: steps.check_apk.outputs.apk_found == 'false'
