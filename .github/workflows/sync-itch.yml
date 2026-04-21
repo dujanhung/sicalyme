@@ -29,6 +29,7 @@ jobs:
    - name: install jq
     run: sudo apt-get update && sudo apt-get install -y jq
  setup:
+  needs: install-jq
   runs-on: ubuntu-latest
   outputs:
    ready: "true"
