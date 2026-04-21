@@ -44,14 +44,6 @@ jobs:
      env:
       BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
      run: .github/scripts/preflight-check.sh
- preflight-failure-report:
-  needs: preflight
-  if: failure()
-  runs-on: ubuntu-latest
-  steps:
-   - uses: actions/checkout@v4
-   - name: Report preflight error to dashboard
-     run: .github/scripts/report-preflight-error.sh
  resolve-release-version:
   needs: preflight
   runs-on: ubuntu-latest
@@ -68,10 +60,3 @@ jobs:
      env:
       BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
      run: .github/scripts/sync-itch-apk.sh
- update-dashboard:
-  needs: sync-apk
-  runs-on: ubuntu-latest
-  steps:
-   - uses: actions/checkout@v4
-   - name: Update Release dashboard
-     run: .github/scripts/update-release-dashboard.sh
