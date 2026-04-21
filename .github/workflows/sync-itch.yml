@@ -13,10 +13,14 @@ env:
  ACTION: ${{ github.event.action }}
 jobs:
  cache-butler:
-  uses: actions/cache@v4
-  with:
-   path: ~/.butler/bin
-   key: butler-${{ runner.os }}
+  runs-on: ubuntu-latest
+  outputs:
+   ready: "true"
+  steps:
+   uses: actions/cache@v4
+   with:
+    path: ~/.butler/bin
+    key: butler-${{ runner.os }}
  setup:
   runs-on: ubuntu-latest
   outputs:
