@@ -12,13 +12,13 @@ env:
  RELEASE_ID: ${{ github.event.release.id || github.event.issue.number }}
  ACTION: ${{ github.event.action }}
 jobs:
- - name: install jq
-  run: sudo apt-get update && sudo apt-get install -y jq
  - name: Cache Butler binary
   uses: actions/cache@v4
   with:
    path: ~/.butler/bin
    key: butler-${{ runner.os }}
+ - name: install jq
+  run: sudo apt-get update && sudo apt-get install -y jq
  setup:
   runs-on: ubuntu-latest
   outputs:
