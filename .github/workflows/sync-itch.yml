@@ -22,8 +22,12 @@ jobs:
    - with:
     path: ~/.butler/bin
     key: butler-${{ runner.os }}
- - name: install jq
-  run: sudo apt-get update && sudo apt-get install -y jq
+ install-jq:
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v4
+   - name: install jq
+    run: sudo apt-get update && sudo apt-get install -y jq
  setup:
   runs-on: ubuntu-latest
   outputs:
