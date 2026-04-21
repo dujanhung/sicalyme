@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 set -e
 if [ -z "$RELEASE_ID" ]; then
  echo "ERROR: RELEASE_ID missing"
