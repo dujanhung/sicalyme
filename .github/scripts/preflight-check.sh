@@ -53,11 +53,19 @@ check_butler_api_key(){
   print_error "Missing secret: BUTLER_API_KEY"
  fi
 }
-check_itch_api_identity(){
- RESPONSE=$(curl -s -H \
-  "Authorization: Bearer $BUTLER_API_KEY" \
-  https://itch.io/api/1/me \
- )
+check_itch_api_identity () {
+ CACHE_FILE="$CACHE_DIR/me.json"
+ if [ -f "$CACHE_FILE" ]; then
+  echo "itch.io /me cache hit ✔"
+  RESPONSE=$(cat "$CACHE_FILE")
+ else
+  echo "Fetching itch.io /me..."
+  RESPONSE=$(curl -s -H \
+   "Authorization: Bearer $BUTLER_API_KEY" \
+   https://itch.io/api/1/me \
+  )
+  echo "$RESPONSE" > "$CACHE_FILE"
+ fi
  if ! echo "$RESPONSE" | grep -q '"user"'; then
   print_error "BUTLER_API_KEY invalid or expired"
  fi
