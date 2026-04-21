@@ -30,7 +30,10 @@ jobs:
   steps:
    - uses: actions/checkout@v4
    - name: Make scripts executable
-     run: chmod +x .github/scripts/*.sh
+     run: |
+      chmod +x .github/scripts/preflight-check.sh
+      chmod +x .github/scripts/resolve-release-version.sh
+      chmod +x .github/scripts/sync-itch-apk.sh
  preflight:
   needs: setup
   runs-on: ubuntu-latest
