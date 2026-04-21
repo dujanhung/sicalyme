@@ -36,6 +36,14 @@ jobs:
     run: .github/scripts/preflight-check.sh
      env:
       BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+ preflight-failure-report:
+  needs: preflight
+  if: failure()
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v4
+   - name: Report preflight error to dashboard
+    run: .github/scripts/report-preflight-error.sh
  resolve-release-version:
   needs: preflight
   runs-on: ubuntu-latest
