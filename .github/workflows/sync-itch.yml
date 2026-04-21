@@ -41,7 +41,7 @@ jobs:
    - name: test
      run: .github/scripts/test.sh
  preflight:
-  needs: setup
+  needs: test-sh
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v4
