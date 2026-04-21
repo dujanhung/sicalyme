@@ -17,10 +17,11 @@ jobs:
   outputs:
    ready: "true"
   steps:
-   uses: actions/cache@v4
-   with:
-    path: ~/.butler/bin
-    key: butler-${{ runner.os }}
+   - uses: actions/cache@v4
+   - name: cache butler
+     with:
+      path: ~/.butler/bin
+      key: butler-${{ runner.os }}
  setup:
   runs-on: ubuntu-latest
   outputs:
