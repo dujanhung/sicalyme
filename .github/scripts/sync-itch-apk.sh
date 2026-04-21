@@ -3,174 +3,157 @@
 set -e
 
 
-PROJECT="$USERNAME/$GAMENAME"
+load_config () {
 
-SUMMARY_FILE="$GITHUB_STEP_SUMMARY"
-TABLE_FILE="channel_results_table.txt"
-CHANNEL_FILE="channel_links.txt"
+ FILE="$1"
 
-rm -f "$TABLE_FILE"
-rm -f "$CHANNEL_FILE"
-
-
-record_summary () {
-
- CHANNEL="$1"
- RESULT="$2"
-
- echo "| $CHANNEL | $RESULT |" >> "$SUMMARY_FILE"
- echo "$CHANNEL : $RESULT" >> "$TABLE_FILE"
- echo "$CHANNEL" >> "$CHANNEL_FILE"
-
-}
-
-
-attach_to_main_page () {
-
- CHANNEL="$1"
-
- curl -s \
-  -H "Authorization: Bearer $BUTLER_API_KEY" \
-  https://itch.io/api/1/$USERNAME/game/$GAMENAME/channel/$CHANNEL/attach \
-  > /dev/null || true
-
-}
-
-
-fetch_release_notes () {
-
- RELEASE_JSON=$(curl -s \
-  -H "Authorization: Bearer $GH_TOKEN" \
-  https://api.github.com/repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID)
-
- RELEASE_BODY=$(echo "$RELEASE_JSON" \
-  | sed -n 's/.*"body": "\(.*\)".*/\1/p')
-
- CHANGELOG=$(echo "$RELEASE_BODY" \
-  | sed 's/\\r//g' \
-  | sed 's/\\n/\n/g')
-
- echo "$CHANGELOG"
-
-}
-
-
-update_channel_description () {
-
- CHANNEL="$1"
-
- NOTES=$(fetch_release_notes)
-
- if [ -z "$NOTES" ]; then
-  NOTES="No release notes available."
+ if [ ! -f "$FILE" ]; then
+  echo "Missing config: $FILE"
+  exit 1
  fi
 
 
- curl -s \
-  -H "Authorization: Bearer $BUTLER_API_KEY" \
-  -X POST \
-  https://itch.io/api/1/$USERNAME/game/$GAMENAME/channel/$CHANNEL/update \
-  -d "description=Version: $VERSION
+ VALUE=$(cat "$FILE" | tr -d '\n')
 
-$NOTES" \
-  > /dev/null || true
+
+ if [ -z "$VALUE" ]; then
+  echo "Empty config: $FILE"
+  exit 1
+ fi
+
+
+ echo "$VALUE"
 
 }
 
 
-MAX_PARALLEL=3
-UPLOAD_PIDS=()
+USERNAME=$(load_config .github/config/itch-username.txt)
+GAMENAME=$(load_config .github/config/itch-gamename.txt)
+
+PROJECT="$USERNAME/$GAMENAME"
 
 
-wait_for_slot () {
+if [ "$ACTION" = "deleted" ]; then
 
- while [ "${#UPLOAD_PIDS[@]}" -ge "$MAX_PARALLEL" ]; do
+ echo "👀 removed — deleting itch.io channels"
 
-  for i in "${!UPLOAD_PIDS[@]}"; do
 
-   if ! kill -0 "${UPLOAD_PIDS[$i]}" 2>/dev/null; then
-    unset 'UPLOAD_PIDS[i]'
-   fi
+ CHANNELS=$(butler status "$PROJECT" \
+  | grep channel \
+  | awk '{print $2}')
 
-  done
 
-  sleep 1
+ for channel in $CHANNELS; do
+
+  echo "Removing channel $channel"
+
+  butler rm "$PROJECT:$channel" || true
 
  done
 
+
+ exit 0
+
+fi
+
+
+install_butler () {
+
+ curl -L \
+  https://broth.itch.ovh/butler/linux-amd64/LATEST/archive/default \
+  -o butler.zip
+
+
+ unzip butler.zip
+
+
+ chmod +x butler
+
+
+ sudo mv butler /usr/local/bin/
+
 }
 
 
-schedule_upload () {
+install_butler
+
+
+mkdir -p build
+
+
+curl -L \
+ -H "Authorization: Bearer $GH_TOKEN" \
+ https://api.github.com/repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID/assets \
+ | grep browser_download_url \
+ | grep apk \
+ | cut -d '"' -f 4 \
+ | while read url; do
+
+ curl -L \
+  -H "Authorization: Bearer $GH_TOKEN" \
+  "$url" \
+  -o build/$(basename "$url")
+
+done
+
+
+if ! ls build/*.apk 1> /dev/null 2>&1; then
+ echo "No APK files found"
+ exit 0
+fi
+
+
+detect_channel () {
 
  FILE="$1"
- CHANNEL="$2"
 
- wait_for_slot
 
- (
-  butler push "$FILE" "$PROJECT:$CHANNEL" \
-   --userversion "$VERSION"
+ if echo "$FILE" | grep -i arm64; then
+  ABI="android-arm64"
 
-  attach_to_main_page "$CHANNEL"
+ elif echo "$FILE" | grep -i armv7; then
+  ABI="android-armv7"
 
-  update_channel_description "$CHANNEL"
+ else
+  ABI="android-universal"
 
-  record_summary "$CHANNEL" uploaded
+ fi
 
- ) &
 
- UPLOAD_PIDS+=($!)
+ if echo "$FILE" | grep -i nightly; then
+  BUILD="nightly"
+
+ elif echo "$FILE" | grep -i beta; then
+  BUILD="beta"
+
+ elif echo "$FILE" | grep -i debug; then
+  BUILD="debug"
+
+ else
+  BUILD="release"
+
+ fi
+
+
+ if [ "$BUILD" = "release" ]; then
+  echo "$ABI"
+ else
+  echo "$ABI-$BUILD"
+ fi
 
 }
 
 
-for file in build/*.apk; do
+for apk in build/*.apk; do
 
- NAME=$(basename "$file" .apk)
+ CHANNEL=$(detect_channel "$apk")
 
-
- if echo "$NAME" | grep arm64 > /dev/null; then
-  VARIANT=arm64
- elif echo "$NAME" | grep x86 > /dev/null; then
-  VARIANT=x86
- else
-  VARIANT=""
- fi
+ echo "Uploading $apk → $CHANNEL"
 
 
- if [ "$STAGE" = nightly ]; then
-
-  CHANNEL="android-nightly-$VARIANT"
-
- elif [ "$STAGE" = beta ]; then
-
-  CHANNEL="android-beta-$VARIANT"
-
- else
-
-  CHANNEL="android-$VARIANT"
-
- fi
-
-
- schedule_upload "$file" "$CHANNEL"
+ butler push \
+  "$apk" \
+  "$PROJECT:$CHANNEL" \
+  --userversion "$VERSION"
 
 done
-
-
-FAIL=0
-
-
-for PID in "${UPLOAD_PIDS[@]}"; do
-
- if ! wait "$PID"; then
-  FAIL=1
- fi
-
-done
-
-
-if [ "$FAIL" = 1 ]; then
- exit 1
-fi
