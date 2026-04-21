@@ -3,70 +3,68 @@
 set -e
 
 
-EVENT="$GITHUB_EVENT_NAME"
-ACTION="$GITHUB_EVENT_ACTION"
+load_config () {
 
-VERSION="$VERSION"
-STAGE="$STAGE"
-ACTOR="$GITHUB_ACTOR"
-TIME=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+ FILE="$1"
 
-REPO="$GITHUB_REPOSITORY"
-
-
-if [ "$EVENT" = release ]; then
- RELEASE_ID="$RELEASE_ID"
-else
- RELEASE_ID="$REACTION_RELEASE_ID"
-fi
+ if [ ! -f "$FILE" ]; then
+  echo "Missing config: $FILE"
+  exit 1
+ fi
 
 
-MARKER_START="<!-- APK_SYNC_STATUS_START -->"
-MARKER_END="<!-- APK_SYNC_STATUS_END -->"
+ VALUE=$(cat "$FILE" | tr -d '\n')
 
 
-RELEASE_JSON=$(curl -s \
+ if [ -z "$VALUE" ]; then
+  echo "Empty config: $FILE"
+  exit 1
+ fi
+
+
+ echo "$VALUE"
+
+}
+
+
+USERNAME=$(load_config .github/config/itch-username.txt)
+GAMENAME=$(load_config .github/config/itch-gamename.txt)
+
+PROJECT="$USERNAME/$GAMENAME"
+
+
+BODY=$(curl -s \
  -H "Authorization: Bearer $GH_TOKEN" \
- https://api.github.com/repos/$REPO/releases/$RELEASE_ID)
+ https://api.github.com/repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID \
+ | grep '"body":' \
+ | sed 's/.*"body": "\(.*\)".*/\1/')
 
 
-APK_TABLE="No APK assets attached."
+CHANNEL_LIST=$(butler status "$PROJECT" \
+ | grep channel \
+ | awk '{print $2}')
 
 
-CHANNEL_RESULTS="No channel updates performed."
+CHANNEL_TEXT=""
+
+for channel in $CHANNEL_LIST; do
+ CHANNEL_TEXT="$CHANNEL_TEXT
+- $channel"
+done
 
 
-CHANNEL_LINKS="No channels available."
+NEW_BODY="$BODY
+
+---
+
+### itch.io downloads
+
+https://$USERNAME.itch.io/$GAMENAME
+
+Available channels:$CHANNEL_TEXT"
 
 
-DASHBOARD=$(cat <<EOF
-$MARKER_START
-## 📦 APK Deployment Status
-
-**Version:** $VERSION  
-**Stage:** $STAGE  
-**Updated:** $TIME  
-
-### APK Assets
-
-$APK_TABLE
-
-### Channel Results
-
-$CHANNEL_RESULTS
-
-### Channel Links
-
-$CHANNEL_LINKS
-
-$MARKER_END
-EOF
-)
-
-
-curl -s \
- -X PATCH \
+curl -X PATCH \
  -H "Authorization: Bearer $GH_TOKEN" \
- -H "Accept: application/vnd.github+json" \
- https://api.github.com/repos/$REPO/releases/$RELEASE_ID \
- -d "{\"body\": \"$DASHBOARD\"}"
+ https://api.github.com/repos/$GITHUB_REPOSITORY/releases/$RELEASE_ID \
+ -d "{\"body\":\"$NEW_BODY\"}"
