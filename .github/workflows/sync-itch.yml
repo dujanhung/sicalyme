@@ -1,36 +1,27 @@
 name: Sync APK to itch.io
 
+
 on:
 
- reaction:
-  types: [created, deleted]
-
  release:
-  types: [published]
+
+  types:
+   - published
+
+
+ reaction:
+
+  types:
+   - created
+   - deleted
 
 
 jobs:
 
- deploy:
 
-  if: |
-   github.event_name == 'release'
-   ||
-   (
-    github.event_name == 'reaction'
-    &&
-    github.event.reaction.content == 'eyes'
-    &&
-    github.event.sender.login == github.repository_owner
-   )
+ preflight:
 
   runs-on: ubuntu-latest
-
-
-  env:
-
-   USERNAME: dujanhung
-   GAMENAME: sicalyme
 
 
   steps:
@@ -38,148 +29,73 @@ jobs:
    - uses: actions/checkout@v4
 
 
-   - name: Detect Release info
-     id: release_info
-     run: |
+   - name: Preflight validation
 
-      if [ "${{ github.event_name }}" = "release" ]; then
-
-       echo "id=${{ github.event.release.id }}" >> $GITHUB_OUTPUT
-       echo "tag=${{ github.event.release.tag_name }}" >> $GITHUB_OUTPUT
-
-      else
-
-       echo "id=${{ github.event.subject_id }}" >> $GITHUB_OUTPUT
-
-       TAG=$(curl -s \
-        -H "Authorization: Bearer ${{ github.token }}" \
-        https://api.github.com/repos/${{ github.repository }}/releases/${{ github.event.subject_id }} \
-        | grep tag_name \
-        | head -1 \
-        | cut -d '"' -f4)
-
-       echo "tag=$TAG" >> $GITHUB_OUTPUT
-
-      fi
+    run: .github/scripts/preflight-check.sh
 
 
-   - name: Detect release stage
-     id: stage
-     run: |
+    env:
 
-      TAG="${{ steps.release_info.outputs.tag }}"
+     BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
 
-      if echo "$TAG" | grep -qi nightly; then
-       echo stage=nightly >> $GITHUB_OUTPUT
-      elif echo "$TAG" | grep -qi beta; then
-       echo stage=beta >> $GITHUB_OUTPUT
-      else
-       echo stage=stable >> $GITHUB_OUTPUT
-      fi
+     GH_TOKEN: ${{ github.token }}
+
+     RELEASE_ID: ${{ github.event.release.id || github.event.issue.number }}
 
 
-   - name: Download Release APK assets
-     run: |
-
-      mkdir build
-
-      curl -s \
-       -H "Authorization: Bearer ${{ github.token }}" \
-       https://api.github.com/repos/${{ github.repository }}/releases/${{ steps.release_info.outputs.id }} \
-       | grep browser_download_url \
-       | grep ".apk" \
-       | cut -d '"' -f4 \
-       | while read URL; do
-
-        curl -L \
-         -H "Authorization: Bearer ${{ github.token }}" \
-         "$URL" \
-         -o build/$(basename "$URL")
-
-       done
 
 
-   - name: Skip if no APK found
-     run: |
+ sync-apk:
 
-      if ! ls build/*.apk 1> /dev/null 2>&1; then
+  needs: preflight
 
-       echo "No APK assets attached — skipping deployment"
-
-       exit 0
-
-      fi
+  runs-on: ubuntu-latest
 
 
-   - name: Cache Butler
-     id: cache-butler
-     uses: actions/cache@v4
-     with:
-      path: ~/.butler
-      key: butler-${{ runner.os }}-linux-amd64
+  steps:
+
+   - uses: actions/checkout@v4
 
 
-   - name: Install Butler (if missing)
-     if: steps.cache-butler.outputs.cache-hit != 'true'
-     run: |
+   - name: Upload APK to itch.io
 
-      mkdir -p ~/.butler
-
-      BUTLER_URL=$(curl -s \
-       https://api.github.com/repos/itchio/butler/releases/latest \
-       | grep browser_download_url \
-       | grep linux-amd64 \
-       | cut -d '"' -f4)
-
-      curl -L "$BUTLER_URL" -o butler.zip
-
-      unzip butler.zip
-
-      chmod +x butler
-
-      mv butler ~/.butler/
+    run: .github/scripts/sync-itch-apk.sh
 
 
-   - name: Add Butler to PATH
-     run: |
+    env:
 
-      echo "$HOME/.butler" >> $GITHUB_PATH
+     ACTION: ${{ github.event.action }}
 
-      butler --version
+     VERSION: ${{ github.event.release.tag_name }}
+
+     GH_TOKEN: ${{ github.token }}
+
+     RELEASE_ID: ${{ github.event.release.id || github.event.issue.number }}
+
+     BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
 
 
-   - name: Sync APK to itch.io
-     run: .github/scripts/sync-itch-apk.sh
-     env:
 
-      USERNAME: ${{ env.USERNAME }}
-      GAMENAME: ${{ env.GAMENAME }}
 
-      VERSION: ${{ steps.release_info.outputs.tag }}
-      STAGE: ${{ steps.stage.outputs.stage }}
+ update-dashboard:
 
-      ACTION: ${{ github.event.action }}
+  needs: sync-apk
 
-      BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+  runs-on: ubuntu-latest
 
-      GH_TOKEN: ${{ github.token }}
-      RELEASE_ID: ${{ steps.release_info.outputs.id }}
+
+  steps:
+
+   - uses: actions/checkout@v4
 
 
    - name: Update Release dashboard
-     if: always()
-     run: .github/scripts/update-release-dashboard.sh
-     env:
 
-      VERSION: ${{ steps.release_info.outputs.tag }}
-      STAGE: ${{ steps.stage.outputs.stage }}
+    run: .github/scripts/update-release-dashboard.sh
 
-      USERNAME: ${{ env.USERNAME }}
-      GAMENAME: ${{ env.GAMENAME }}
 
-      GH_TOKEN: ${{ github.token }}
+    env:
 
-      RELEASE_ID: ${{ github.event.release.id }}
-      REACTION_RELEASE_ID: ${{ github.event.subject_id }}
+     GH_TOKEN: ${{ github.token }}
 
-      GITHUB_EVENT_ACTION: ${{ github.event.action }}
+     RELEASE_ID: ${{ github.event.release.id || github.event.issue.number }}
