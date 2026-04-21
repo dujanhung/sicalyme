@@ -1,101 +1,43 @@
 name: Sync APK to itch.io
-
-
 on:
-
  release:
-
   types:
    - published
-
-
  reaction:
-
   types:
    - created
    - deleted
-
-
 jobs:
-
-
  preflight:
-
   runs-on: ubuntu-latest
-
-
   steps:
-
    - uses: actions/checkout@v4
-
-
    - name: Preflight validation
-
     run: .github/scripts/preflight-check.sh
-
-
     env:
-
      BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
-
      GH_TOKEN: ${{ github.token }}
-
      RELEASE_ID: ${{ github.event.release.id || github.event.issue.number }}
-
-
-
-
  sync-apk:
-
   needs: preflight
-
   runs-on: ubuntu-latest
-
-
   steps:
-
    - uses: actions/checkout@v4
-
-
    - name: Upload APK to itch.io
-
     run: .github/scripts/sync-itch-apk.sh
-
-
     env:
-
      ACTION: ${{ github.event.action }}
-
      VERSION: ${{ github.event.release.tag_name }}
-
      GH_TOKEN: ${{ github.token }}
-
      RELEASE_ID: ${{ github.event.release.id || github.event.issue.number }}
-
      BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
-
-
-
-
  update-dashboard:
-
   needs: sync-apk
-
   runs-on: ubuntu-latest
-
-
   steps:
-
    - uses: actions/checkout@v4
-
-
    - name: Update Release dashboard
-
     run: .github/scripts/update-release-dashboard.sh
-
-
     env:
-
      GH_TOKEN: ${{ github.token }}
-
      RELEASE_ID: ${{ github.event.release.id || github.event.issue.number }}
