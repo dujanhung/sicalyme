@@ -41,9 +41,9 @@ jobs:
   steps:
    - uses: actions/checkout@v4
    - name: Run preflight validation
-     run: .github/scripts/preflight-check.sh
      env:
       BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+     run: .github/scripts/preflight-check.sh
  preflight-failure-report:
   needs: preflight
   if: failure()
@@ -65,9 +65,9 @@ jobs:
   steps:
    - uses: actions/checkout@v4
    - name: Upload APK to itch.io
-     run: .github/scripts/sync-itch-apk.sh
      env:
       BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+     run: .github/scripts/sync-itch-apk.sh
  update-dashboard:
   needs: sync-apk
   runs-on: ubuntu-latest
