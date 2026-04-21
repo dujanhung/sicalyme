@@ -34,13 +34,18 @@ jobs:
     run: .github/scripts/preflight-check.sh
      env:
       BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
- sync-apk:
+ resolve-release-version:
   needs: preflight
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v4
    - name: Resolve release version
     run: .github/scripts/resolve-release-version.sh
+ sync-apk:
+  needs: resolve-release-version
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v4
    - name: Upload APK to itch.io
     run: .github/scripts/sync-itch-apk.sh
      env:
