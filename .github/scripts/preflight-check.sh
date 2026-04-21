@@ -1,5 +1,3 @@
-set -e
-
 STATE_FILE="$STATE_DIR/state.json"
 mkdir -p ".github/cache/preflight"
 
