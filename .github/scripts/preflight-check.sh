@@ -43,10 +43,6 @@ check_file () {
  [ ! -f "$1" ] && print_error "Missing file: $1"
 }
 
-check_file .github/config/itch-username.txt
-check_file .github/config/itch-gamename.txt
-check_file .github/config/butler-url.txt
-
 check_butler_url () {
  if [ "$FORCE_REFRESH" = false ] && [ "$(echo "$STATE" | jq -r '.butler_url_hash')" = "$BUTLER_HASH" ]; then
   echo "Butler URL cache valid ✔"
@@ -96,6 +92,10 @@ check_itch_project () {
 }
 
 echo "Running JSON Preflight State Engine..."
+
+check_file .github/config/itch-username.txt
+check_file .github/config/itch-gamename.txt
+check_file .github/config/butler-url.txt
 
 check_itch_me
 check_itch_project
