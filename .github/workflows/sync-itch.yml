@@ -13,6 +13,8 @@ jobs:
   steps:
    - name: cache butler binary
      uses: actions/cache@v4
+     env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true
      with:
       path: ~/.butler/bin
       key: butler-${{ runner.os }}
