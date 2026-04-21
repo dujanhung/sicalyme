@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 set -e
 load_config(){
  FILE="$1"
