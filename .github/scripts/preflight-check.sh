@@ -1,13 +1,11 @@
 #!/usr/bin/env bash
 set -e
 
-STATE_DIR=".github/cache/preflight"
 STATE_FILE="$STATE_DIR/state.json"
-mkdir -p "$STATE_DIR"
+mkdir -p ".github/cache/preflight"
 
 print_error () {
  ERROR_FILE=".github/cache/preflight/error.json"
- mkdir -p ".github/cache/preflight"
  MESSAGE="$1"
  echo ""
  echo "PRE-FLIGHT CHECK FAILED"
