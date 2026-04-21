@@ -21,10 +21,12 @@ check_file(){
  FILE="$1"
  if [ ! -f "$FILE" ]; then
   print_error "Missing file: $FILE"
+  exit 1
  fi
  VALUE=$(cat "$FILE" | tr -d '\n')
  if [ -z "$VALUE" ]; then
   print_error "Empty file: $FILE"
+  exit 1
  fi
 }
 check_butler_url(){
@@ -32,10 +34,12 @@ check_butler_url(){
  CACHE_FILE=".github/cache/butler-url.sha"
  if [ ! -f "$URL_FILE" ]; then
   print_error "Missing file: $URL_FILE"
+  exit 1
  fi
  BUTLER_URL=$(cat "$URL_FILE" | tr -d '\n')
  if [ -z "$BUTLER_URL" ]; then
   print_error "Butler URL is empty"
+  exit 1
  fi
  URL_HASH=$(echo "$BUTLER_URL" | sha256sum | awk '{print $1}')
  if [ -f "$CACHE_FILE" ]; then
@@ -53,6 +57,7 @@ check_butler_url(){
  CONTENT_TYPE=$(curl -sI "$BUTLER_URL" | grep -i content-type | head -1)
  if echo "$CONTENT_TYPE" | grep -qi "text/html"; then
   print_error "Butler URL returned HTML (invalid archive)"
+  exit 1
  fi
  echo "$URL_HASH" > "$CACHE_FILE"
  echo "Butler URL validated and cached ✔"
@@ -60,6 +65,7 @@ check_butler_url(){
 check_butler_api_key(){
  if [ -z "$BUTLER_API_KEY" ]; then
   print_error "Missing secret: BUTLER_API_KEY"
+  exit 1
  fi
 }
 check_itch_api_identity(){
@@ -68,11 +74,13 @@ check_itch_api_identity(){
   https://itch.io/api/1/me)
  if ! echo "$RESPONSE" | grep -q '"user"'; then
   print_error "BUTLER_API_KEY invalid or expired"
+  exit 1
  fi
 }
 check_release_apk_assets(){
  if [ -z "$RELEASE_ID" ]; then
   print_error "Missing RELEASE_ID environment variable"
+  exit 1
  fi
  RESPONSE=$(curl -s \
   -H "Authorization: Bearer $GH_TOKEN" \
@@ -83,6 +91,7 @@ check_release_apk_assets(){
   | wc -l)
  if [ "$APK_COUNT" = "0" ]; then
   print_error "No APK assets attached to GitHub Release"
+  exit 0
  fi
 }
 check_itch_project_access(){
@@ -94,9 +103,11 @@ check_itch_project_access(){
  if echo "$RESPONSE" | grep -q '"errors"'; then
   print_error "itch.io project not accessible:
 $USERNAME/$GAMENAME"
+  exit 1
  fi
  if ! echo "$RESPONSE" | grep -q '"game"'; then
   print_error "Unexpected itch.io API response"
+  exit 1
  fi
 }
 echo "Running pre-flight validation..."
