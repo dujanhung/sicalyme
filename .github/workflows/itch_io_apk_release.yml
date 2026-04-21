@@ -3,11 +3,13 @@ name: Sync APK Release to itch.io
 on:
  release:
   types: [published]
+
  reaction:
   types: [created]
 
 jobs:
  upload:
+
   if: >
    github.event_name == 'release' ||
    (
@@ -16,12 +18,16 @@ jobs:
     github.event.repository.owner.login == github.event.sender.login &&
     github.event.subject_type == 'release'
    )
+
   runs-on: ubuntu-latest
+
   env:
-   USERNAME: "dujanhung"
-   GAMENAME: "sicalyme"
+   USERNAME: YOUR_ITCH_USERNAME
+   GAMENAME: YOUR_GAME_SLUG
    ITCH_PROJECT: ${{ env.USERNAME }}/${{ env.GAMENAME }}
+
   steps:
+
    - name: Detect Release ID + tag
     id: release_info
     run: |
@@ -69,10 +75,14 @@ jobs:
    - name: Upload with promotion logic
     if: steps.check_apk.outputs.apk_found == 'true'
     run: |
+
      VERSION="${{ steps.release_info.outputs.tag }}"
      STAGE="${{ steps.stage.outputs.stage }}"
+
      for file in build/*.apk; do
+
       NAME=$(basename "$file" .apk)
+
       if [[ "$NAME" == *arm64* ]]; then
        VARIANT="arm64"
       elif [[ "$NAME" == *universal* ]]; then
@@ -82,26 +92,35 @@ jobs:
       else
        VARIANT=""
       fi
+
       upload_channel () {
+
        BASE="$1"
+
        if [ -z "$VARIANT" ]; then
         CHANNEL="$BASE"
        else
         CHANNEL="$BASE-$VARIANT"
        fi
+
        echo "Uploading → $CHANNEL"
+
        butler push "$file" $ITCH_PROJECT:$CHANNEL \
         --userversion "$VERSION"
       }
+
       if [ "$STAGE" = "nightly" ]; then
        upload_channel android-nightly
+
       elif [ "$STAGE" = "beta" ]; then
        upload_channel android-beta
+
       else
        upload_channel android
        upload_channel android-beta
        upload_channel android-nightly
       fi
+
      done
 
     env:
@@ -109,6 +128,4 @@ jobs:
 
    - name: Skip message (no APK attached)
     if: steps.check_apk.outputs.apk_found == 'false'
-    run: |
-     echo "No APK found in release assets. Skipping itch.io upload."
-     done
+    run: echo "No APK found in release assets. Skipping itch.io upload."
