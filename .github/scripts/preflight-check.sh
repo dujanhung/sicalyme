@@ -6,11 +6,15 @@ STATE_FILE="$STATE_DIR/state.json"
 mkdir -p "$STATE_DIR"
 
 print_error () {
+ ERROR_FILE=".github/cache/preflight/error.json"
+ mkdir -p ".github/cache/preflight"
+ MESSAGE="$1"
  echo ""
  echo "PRE-FLIGHT CHECK FAILED"
  echo ""
- echo "$1"
+ echo "$MESSAGE"
  echo ""
+ echo "{\"status\":\"failed\",\"message\":\"$MESSAGE\",\"timestamp\":$(date +%s)}" > "$ERROR_FILE"
  exit 1
 }
 
