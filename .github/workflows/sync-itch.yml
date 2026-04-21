@@ -19,8 +19,8 @@ jobs:
   steps:
    - uses: actions/cache@v4
    - with:
-     path: ~/.butler/bin
-     key: butler-${{ runner.os }}
+   - path: ~/.butler/bin
+   - key: butler-${{ runner.os }}
  setup:
   runs-on: ubuntu-latest
   outputs:
