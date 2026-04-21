@@ -17,7 +17,7 @@ jobs:
   outputs:
    ready: "true"
   steps:
-   - name: Cache Butler binary
+   - name: cache butler binary
    - uses: actions/cache@v4
    - with:
     path: ~/.butler/bin
