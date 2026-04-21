@@ -28,9 +28,13 @@ if [ "$ACTION" = "deleted" ]; then
  exit 0
 fi
 install_butler(){
- curl -L \
-  https://github.com/itchio/butler \
-  -o butler.zip
+ BUTLER_URL=$(cat .github/config/butler-url.txt | tr -d '\n')
+ if [ -z "$BUTLER_URL" ]; then
+  echo "ERROR: Butler URL config is empty"
+  exit 1
+ fi
+ echo "Downloading Butler from: $BUTLER_URL"
+ curl -L "$BUTLER_URL" -o butler.zip
  unzip butler.zip
  chmod +x butler
  sudo mv butler /usr/local/bin/
