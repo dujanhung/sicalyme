@@ -100,6 +100,7 @@ check_file .github/config/itch-gamename.txt
 if [ -z "$BUTLER_API_KEY" ]; then
  print_error "Missing secret: BUTLER_API_KEY"
 fi
+check_butler_url
 check_itch_api_identity
 check_release_apk_assets
 check_itch_project_access
