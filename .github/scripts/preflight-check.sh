@@ -90,7 +90,7 @@ check_release_apk_assets(){
   | grep -i '\.apk"' \
   | wc -l)
  if [ "$APK_COUNT" = "0" ]; then
-  print_error "No APK assets attached to GitHub Release"
+  echo "No APK assets attached to GitHub Release"
   exit 0
  fi
 }
