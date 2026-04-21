@@ -27,6 +27,36 @@ check_file(){
   print_error "Empty file: $FILE"
  fi
 }
+check_butler_url(){
+ URL_FILE=".github/config/butler-url.txt"
+ CACHE_FILE=".github/cache/butler-url.sha"
+ if [ ! -f "$URL_FILE" ]; then
+  print_error "Missing file: $URL_FILE"
+ fi
+ BUTLER_URL=$(cat "$URL_FILE" | tr -d '\n')
+ if [ -z "$BUTLER_URL" ]; then
+  print_error "Butler URL is empty"
+ fi
+ URL_HASH=$(echo "$BUTLER_URL" | sha256sum | awk '{print $1}')
+ if [ -f "$CACHE_FILE" ]; then
+  CACHED_HASH=$(cat "$CACHE_FILE")
+  if [ "$CACHED_HASH" = "$URL_HASH" ]; then
+   echo "Butler URL cache hit ✔ (skipping validation)"
+   return
+  fi
+ fi
+ echo "Validating Butler URL (cache miss)..."
+ HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" "$BUTLER_URL")
+ if [ "$HTTP_CODE" -ne 200 ]; then
+  print_error "Butler URL not reachable (HTTP $HTTP_CODE)"
+ fi
+ CONTENT_TYPE=$(curl -sI "$BUTLER_URL" | grep -i content-type | head -1)
+ if echo "$CONTENT_TYPE" | grep -qi "text/html"; then
+  print_error "Butler URL returned HTML (invalid archive)"
+ fi
+ echo "$URL_HASH" > "$CACHE_FILE"
+ echo "Butler URL validated and cached ✔"
+}
 check_itch_api_identity(){
  RESPONSE=$(curl -s \
   -H "Authorization: Bearer $BUTLER_API_KEY" \
