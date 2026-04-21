@@ -1,31 +1,19 @@
 #!/usr/bin/env bash
-
 set -e
 
-
 load_config () {
-
  FILE="$1"
-
  if [ ! -f "$FILE" ]; then
   echo "Missing config: $FILE"
   exit 1
  fi
-
-
  VALUE=$(cat "$FILE" | tr -d '\n')
-
-
  if [ -z "$VALUE" ]; then
   echo "Empty config: $FILE"
   exit 1
  fi
-
-
  echo "$VALUE"
-
 }
-
 
 USERNAME=$(load_config .github/config/itch-username.txt)
 GAMENAME=$(load_config .github/config/itch-gamename.txt)
