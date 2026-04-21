@@ -3,10 +3,6 @@ on:
  release:
   types:
    - published
- reaction:
-  types:
-   - created
-   - deleted
 env:
  GH_TOKEN: ${{ github.token }}
  RELEASE_ID: ${{ github.event.release.id || github.event.issue.number }}
