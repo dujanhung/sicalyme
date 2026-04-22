@@ -1,5 +1,5 @@
-STATE_FILE="$STATE_DIR/state.json"
 mkdir -p ".github/cache/preflight"
+STATE_FILE=".github/cache/preflight/state.json"
 
 print_error () {
  ERROR_FILE=".github/cache/preflight/error.json"
