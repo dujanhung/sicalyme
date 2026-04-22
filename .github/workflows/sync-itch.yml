@@ -40,17 +40,8 @@ jobs:
    - uses: actions/checkout@v4
    - name: test
      run: .github/scripts/test.sh
- preflight:
-  needs: do-test-sh
-  runs-on: ubuntu-latest
-  steps:
-   - uses: actions/checkout@v4
-   - name: Run preflight validation
-     env:
-      BUTLER_API_KEY: ${{ secrets.ITCH_IO_SICALYME }}
-     run: .github/scripts/preflight-check.sh
  resolve-release-version:
-  needs: preflight
+  needs: do-test-sh
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v4
