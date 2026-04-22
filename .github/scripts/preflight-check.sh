@@ -1,4 +1,3 @@
-mkdir -p ".github/cache/preflight"
 STATE_FILE=".github/cache/preflight/state.json"
 
 print_error () {
